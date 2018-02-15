@@ -75,13 +75,13 @@
         </span>
       </div>
 
-      <div ng-show="wallet.cachedStatus.wallet.copayers[0]" class="item item-divider">
+      <div ng-show="wallet.cachedStatus.wallet.zelers[0]" class="item item-divider">
         Copayers
       </div>
 
-      <div class="item item-icon-right" ng-repeat="copayer in wallet.cachedStatus.wallet.copayers">
-        {{copayer.name}}
-        <span ng-show="copayer.id == wallet.copayerId">
+      <div class="item item-icon-right" ng-repeat="zeler in wallet.cachedStatus.wallet.zelers">
+        {{zeler.name}}
+        <span ng-show="zeler.id == wallet.zelerId">
           ({{'Me'|translate}})
         </span>
       </div>

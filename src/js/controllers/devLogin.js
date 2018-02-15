@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('DevLoginController', function($scope, $rootScope, $routeParams, identityService) {
+angular.module('zelApp.controllers').controller('DevLoginController', function($scope, $rootScope, $routeParams, identityService) {
 
   var mail = $routeParams.mail;
   var password = $routeParams.password;

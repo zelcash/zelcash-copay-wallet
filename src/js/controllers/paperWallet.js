@@ -1,4 +1,4 @@
-angular.module('copayApp.controllers').controller('paperWalletController',
+angular.module('zelApp.controllers').controller('paperWalletController',
   function($scope, $timeout, $log, $ionicModal, $ionicHistory, feeService, popupService, gettextCatalog, platformInfo, configService, profileService, $state, bitcoreZel, ongoingProcess, txFormatService, $stateParams, walletService) {
 
     function _scanFunds(cb) {

@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.services')
+angular.module('zelApp.services')
   .factory('bitcoreZel', function bitcoreZelFactory(bwcService) {
     var bitcoreZel = bwcService.getBitcoreZel();
     return bitcoreZel;

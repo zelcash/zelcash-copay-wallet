@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.controllers').controller('tourController',
+angular.module('zelApp.controllers').controller('tourController',
   function($scope, $state, $log, $timeout, $filter, ongoingProcess, profileService, rateService, popupService, gettextCatalog) {
 
     $scope.data = {

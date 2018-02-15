@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('appIdentityService', function($log, lodash, storageService, bitauthService) {
+angular.module('zelApp.services').factory('appIdentityService', function($log, lodash, storageService, bitauthService) {
   var root = {};
 
   root.getIdentity = function(network, cb) {
@@ -27,5 +27,5 @@ angular.module('copayApp.services').factory('appIdentityService', function($log,
   };
 
   return root;
-  
+
 });

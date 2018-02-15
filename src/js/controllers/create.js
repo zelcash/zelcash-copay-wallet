@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('createController',
+angular.module('zelApp.controllers').controller('createController',
   function($scope, $rootScope, $timeout, $log, lodash, $state, $ionicScrollDelegate, $ionicHistory, profileService, configService, gettextCatalog, ledger, trezor, intelTEE, derivationPathHelper, ongoingProcess, walletService, storageService, popupService, appConfigService, pushNotificationsService) {
 
     /* For compressed keys, m*73 + n*34 <= 496 */
@@ -97,7 +97,7 @@ angular.module('copayApp.controllers').controller('createController',
 
       */
 
-      if (appConfigService.name == 'copay') {
+      if (appConfigService.name == 'zel') {
         if (n > 1 && walletService.externalSource.ledger.supported)
           seedOptions.push({
             id: walletService.externalSource.ledger.id,
@@ -249,7 +249,7 @@ angular.module('copayApp.controllers').controller('createController',
             });
             $state.go('tabs.home');
             $timeout(function() {
-              $state.transitionTo('tabs.copayers', {
+              $state.transitionTo('tabs.zelers', {
                 walletId: client.credentials.walletId
               });
             }, 100);

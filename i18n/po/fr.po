@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: zel\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: zel\n"
 "X-Crowdin-Language: fr\n"
 "X-Crowdin-File: template.pot\n"
 "Last-Translator: cmgustavo83\n"
@@ -23,8 +23,8 @@ msgid "(possible double spend)"
 msgstr "(double dépense possible)"
 
 #: www/views/modals/txp-details.html:161
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
-msgstr "* Une proposition de paiement peut être supprimée si vous en êtes le créateur et qu'aucun des autres copayers n'a signé, ou si 24 heures sont passées depuis la création de la proposition."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other zeler has signed, or 2) 24 hours have passed since the proposal was created."
+msgstr "* Une proposition de paiement peut être supprimée si vous en êtes le créateur et qu'aucun des autres zelers n'a signé, ou si 24 heures sont passées depuis la création de la proposition."
 
 #: www/views/tx-details.html:84
 msgid "- {{btx.feeRateStr}} of the transaction"
@@ -244,7 +244,7 @@ msgstr "Êtes-vous surveillé(e) ?"
 msgid "Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin."
 msgstr "Êtes-vous surveillé(e) ? N’importe qui peut dépenser vos bitcoins grâce à votre phrase de récupération."
 
-#: src/js/controllers/copayers.js:56
+#: src/js/controllers/zelers.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
 msgstr "Êtes-vous certain(e) de vouloir annuler et supprimer ce portefeuille ?"
 
@@ -461,7 +461,7 @@ msgstr "Calcul des frais"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: www/views/copayers.html:36
+#: www/views/zelers.html:36
 msgid "Cancel invitation"
 msgstr "Annuler l'invitation"
 
@@ -553,7 +553,7 @@ msgstr "Terminé"
 #: src/js/controllers/buyAmazon.js:311
 #: src/js/controllers/buyMercadoLibre.js:305
 #: src/js/controllers/confirm.js:528
-#: src/js/controllers/copayers.js:55
+#: src/js/controllers/zelers.js:55
 #: src/js/controllers/topup.js:285
 #: www/views/backup.html:53
 #: www/views/backup.html:72
@@ -637,7 +637,7 @@ msgstr "Un Copayer à rejoint"
 msgid "Copayer {{$index}}"
 msgstr "Copayer {{$index}}"
 
-#: src/js/controllers/copayers.js:79
+#: src/js/controllers/zelers.js:79
 #: src/js/controllers/export.js:193
 #: www/views/includes/copyToClipboard.html:4
 msgid "Copied to clipboard"
@@ -790,7 +790,7 @@ msgstr "Impossible de mettre à jour l'historique des transactions"
 
 #: src/js/controllers/addresses.js:29
 #: src/js/controllers/addresses.js:37
-#: src/js/controllers/copayers.js:30
+#: src/js/controllers/zelers.js:30
 #: src/js/controllers/walletDetails.js:78
 msgid "Could not update wallet"
 msgstr "Impossible de mettre à jour le portefeuille"
@@ -870,7 +870,7 @@ msgstr "Supprimer la proposition de paiement"
 msgid "Delete Wallet"
 msgstr "Supprimer le portefeuille"
 
-#: www/views/copayers.html:59
+#: www/views/zelers.html:59
 msgid "Delete it and create a new one"
 msgstr "Le supprimer et en créer un nouveau"
 
@@ -1030,7 +1030,7 @@ msgstr "Écrivez votre mot de passe"
 #: src/js/controllers/buyMercadoLibre.js:24
 #: src/js/controllers/buyMercadoLibre.js:35
 #: src/js/controllers/confirm.js:286
-#: src/js/controllers/copayers.js:67
+#: src/js/controllers/zelers.js:67
 #: src/js/controllers/create.js:161
 #: src/js/controllers/create.js:174
 #: src/js/controllers/create.js:180
@@ -1600,7 +1600,7 @@ msgstr "Données invalides"
 msgid "Invalid derivation path"
 msgstr "Chemin de dérivation invalide"
 
-#: src/js/controllers/copayers.js:90
+#: src/js/controllers/zelers.js:90
 msgid "Invitation to share a {{appName}} Wallet"
 msgstr "Invitation pour partager un portefeuille {{appName}}"
 
@@ -1633,7 +1633,7 @@ msgstr "Il est important d’écrire correctement votre phrase de sauvegarde. Si
 msgid "Join"
 msgstr "Rejoindre"
 
-#: src/js/controllers/copayers.js:85
+#: src/js/controllers/zelers.js:85
 msgid "Join my {{appName}} Wallet. Here is the invitation code: {{secret}} You can download {{appName}} for your phone or desktop at {{appUrl}}"
 msgstr "Rejoins mon portefeuille {{appName}}. Voici le code d'invitation : {{secret}} Tu peux télécharger {{appName}} pour ton téléphone ou pour ton ordinateur sur {{appUrl}}"
 
@@ -1730,7 +1730,7 @@ msgstr "C'est logique"
 msgid "Matches:"
 msgstr "Correspondances :"
 
-#: www/views/includes/copayers.html:4
+#: www/views/includes/zelers.html:4
 #: www/views/preferencesInformation.html:85
 msgid "Me"
 msgstr "Moi"
@@ -2637,9 +2637,9 @@ msgstr "Paramètres"
 msgid "Share the love by inviting your friends."
 msgstr "Partagez l’amour en invitant vos amis."
 
-#: www/views/copayers.html:20
-msgid "Share this invitation with your copayers"
-msgstr "Partagez cette invitation avec vos copayers"
+#: www/views/zelers.html:20
+msgid "Share this invitation with your zelers"
+msgstr "Partagez cette invitation avec vos zelers"
 
 #: src/js/controllers/feedback/complete.js:5
 #: www/views/tab-settings.html:36
@@ -3007,8 +3007,8 @@ msgid "Total Locked Balance"
 msgstr "Solde verrouillé total"
 
 #: www/views/tab-create-shared.html:35
-msgid "Total number of copayers"
-msgstr "Nombre total de copayers"
+msgid "Total number of zelers"
+msgstr "Nombre total de zelers"
 
 #: www/views/addresses.html:81
 msgid "Total wallet inputs"
@@ -3189,11 +3189,11 @@ msgstr "En attente de Ledger..."
 msgid "Waiting for Trezor..."
 msgstr "En attente de Trezor..."
 
-#: www/views/copayers.html:48
-msgid "Waiting for copayers"
-msgstr "Attente des copayers"
+#: www/views/zelers.html:48
+msgid "Waiting for zelers"
+msgstr "Attente des zelers"
 
-#: www/views/copayers.html:53
+#: www/views/zelers.html:53
 msgid "Waiting..."
 msgstr "Attente..."
 
@@ -3285,7 +3285,7 @@ msgstr "Le portefeuille existe déjà dans {{appName}}"
 msgid "Wallet created"
 msgstr "Portefeuille créé"
 
-#: www/views/copayers.html:58
+#: www/views/zelers.html:58
 msgid "Wallet incomplete and broken"
 msgstr "Portefeuille incomplet et cassé "
 
@@ -3582,7 +3582,7 @@ msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "{{updatingTxHistoryProgress}} transactions téléchargées"
 
 #: www/views/cashScan.html:32
-#: www/views/copayers.html:46
+#: www/views/zelers.html:46
 #: www/views/includes/walletInfo.html:18
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}-sur-{{wallet.n}}"

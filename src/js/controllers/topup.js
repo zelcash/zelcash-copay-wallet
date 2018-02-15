@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('topUpController', function($scope, $log, $state, $timeout, $ionicHistory, $ionicConfig, lodash, popupService, profileService, ongoingProcess, walletService, configService, platformInfo, payproService, bwcError, txFormatService, sendMaxService, gettextCatalog) {
+angular.module('zelApp.controllers').controller('topUpController', function($scope, $log, $state, $timeout, $ionicHistory, $ionicConfig, lodash, popupService, profileService, ongoingProcess, walletService, configService, platformInfo, payproService, bwcError, txFormatService, sendMaxService, gettextCatalog) {
 
   $scope.isCordova = platformInfo.isCordova;
   var coin = 'ZEL';

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('backController', function($scope, $state, $stateParams) {
+angular.module('zelApp.controllers').controller('backController', function($scope, $state, $stateParams) {
 
   $scope.importGoBack = function() {
     if ($stateParams.fromOnboarding) $state.go('onboarding.welcome');

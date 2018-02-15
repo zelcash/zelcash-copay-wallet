@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('preferencesController',
+angular.module('zelApp.controllers').controller('preferencesController',
   function($scope, $rootScope, $timeout, $log, $ionicHistory, configService, profileService, fingerprintService, walletService, platformInfo, externalLinkService, gettextCatalog) {
     var wallet;
     var walletId;
@@ -59,7 +59,7 @@ angular.module('copayApp.controllers').controller('preferencesController',
     };
 
     $scope.openWikiSpendingPassword = function() {
-      var url = 'https://github.com/bitpay/copay/wiki/COPAY---FAQ#what-the-spending-password-does';
+      var url = 'https://github.com/bitpay/zel/wiki/COPAY---FAQ#what-the-spending-password-does';
       var optIn = true;
       var title = null;
       var message = gettextCatalog.getString('Read more in our Wiki');

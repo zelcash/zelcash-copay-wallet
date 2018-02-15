@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.directives')
+angular.module('zelApp.directives')
   .directive('accountSelector', function($timeout) {
     return {
       restrict: 'E',

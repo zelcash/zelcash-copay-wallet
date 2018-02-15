@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('configService', function(storageService, lodash, $log, $timeout, $rootScope, platformInfo, bwcService) {
+angular.module('zelApp.services').factory('configService', function(storageService, lodash, $log, $timeout, $rootScope, platformInfo, bwcService) {
   var root = {};
 
   var isWindowsPhoneApp = platformInfo.isCordova && platformInfo.isWP;
@@ -21,8 +21,8 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       bitpay: {
         url: 'https://bitpay.com/wallet'
       },
-      copay: {
-        url: 'https://github.com/Lumiboy/zelcash-copay-wallet/releases'
+      zel: {
+        url: 'https://github.com/Lumiboy/zelcash-zel-wallet/releases'
       }
     },
 
@@ -32,7 +32,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         android: 'https://play.google.com/store/apps/details?id=com.bitpay.wallet',
         wp: ''
       },
-      copay: {
+      zel: {
         ios: 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=951330296&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8',
         android: 'https://play.google.com/store/apps/details?id=com.zelcash.wallet',
         wp: ''
@@ -76,7 +76,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     release: {
-      url: 'https://api.github.com/repos/bitcoinz-wallets/bitcoinz-copay-wallet/releases/latest'
+      url: 'https://api.github.com/repos/bitcoinz-wallets/bitcoinz-zel-wallet/releases/latest'
     },
 
     pushNotificationsEnabled: true,

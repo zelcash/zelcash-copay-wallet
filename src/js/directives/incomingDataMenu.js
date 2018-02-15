@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.directives')
+angular.module('zelApp.directives')
   .directive('incomingDataMenu', function($timeout, $rootScope, $state, externalLinkService) {
     return {
       restrict: 'E',

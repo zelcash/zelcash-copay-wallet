@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.directives')
+angular.module('zelApp.directives')
   .directive('slideToAccept', function($timeout, $window, $q) {
     return {
       restrict: 'E',

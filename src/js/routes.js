@@ -13,7 +13,7 @@ if (window && window.navigator) {
 }
 
 //Setting up route
-angular.module('copayApp').config(function(historicLogProvider, $provide, $logProvider, $stateProvider, $urlRouterProvider, $compileProvider, $ionicConfigProvider) {
+angular.module('zelApp').config(function(historicLogProvider, $provide, $logProvider, $stateProvider, $urlRouterProvider, $compileProvider, $ionicConfigProvider) {
     $urlRouterProvider.otherwise('/starting');
 
     // NO CACHE
@@ -622,12 +622,12 @@ angular.module('copayApp').config(function(historicLogProvider, $provide, $logPr
        *
        */
 
-      .state('tabs.copayers', {
-        url: '/copayers/:walletId',
+      .state('tabs.zelers', {
+        url: '/zelers/:walletId',
         views: {
           'tab-home': {
-            templateUrl: 'views/copayers.html',
-            controller: 'copayersController'
+            templateUrl: 'views/zelers.html',
+            controller: 'zelersController'
           }
         }
       })

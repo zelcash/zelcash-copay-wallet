@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('walletService', function($log, $timeout, lodash, trezor, ledger, intelTEE, storageService, configService, rateService, uxLanguage, $filter, gettextCatalog, bwcError, $ionicPopup, fingerprintService, ongoingProcess, gettext, $rootScope, txFormatService, $ionicModal, $state, bwcService, bitcoreZel, popupService) {
+angular.module('zelApp.services').factory('walletService', function($log, $timeout, lodash, trezor, ledger, intelTEE, storageService, configService, rateService, uxLanguage, $filter, gettextCatalog, bwcError, $ionicPopup, fingerprintService, ongoingProcess, gettext, $rootScope, txFormatService, $ionicModal, $state, bwcService, bitcoreZel, popupService) {
 
   // Ratio low amount warning (fee/amount) in incoming TX
   var LOW_AMOUNT_RATIO = 0.15;
@@ -144,7 +144,7 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
         }
 
         var action = lodash.find(tx.actions, {
-          copayerId: tx.wallet.copayerId
+          zelerId: tx.wallet.zelerId
         });
 
         if (!action && tx.status == 'pending') {
@@ -1245,17 +1245,17 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
 
     var walletPrivKey = bitcoreZel.PrivateKey.fromString(c.walletPrivKey);
 
-    var copayer = 1,
+    var zeler = 1,
       i = 0,
       l = c.publicKeyRing.length;
     var mainErr = null;
 
     lodash.each(c.publicKeyRing, function(item) {
-      var name = item.copayerName || ('copayer ' + copayer++);
+      var name = item.zelerName || ('zeler ' + zeler++);
       newWallet._doJoinWallet(newWallet.credentials.walletId, walletPrivKey, item.xPubKey, item.requestPubKey, name, {
         coin: newWallet.credentials.coin,
       }, function(err) {
-        //Ignore error is copayer already in wallet
+        //Ignore error is zeler already in wallet
         if (err && !(err instanceof errors.COPAYER_IN_WALLET)) {
           mainErr = err;
         }

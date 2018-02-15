@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('copayersController',
+angular.module('zelApp.controllers').controller('zelersController',
   function($scope, $log, $timeout, $stateParams, $state, $rootScope, $ionicHistory, appConfigService, lodash, profileService, walletService, popupService, bwcError, platformInfo, gettextCatalog, ongoingProcess, pushNotificationsService) {
 
     var listener;
@@ -12,12 +12,12 @@ angular.module('copayApp.controllers').controller('copayersController',
       $scope.wallet = profileService.getWallet(data.stateParams.walletId);
       updateWallet();
       $scope.shareIcon = platformInfo.isIOS ? 'iOS' : 'Android';
-    
+
       listener = $rootScope.$on('bwsEvent', function(e, walletId, type, n) {
         if ($scope.wallet && walletId == $scope.wallet.id && type == ('NewCopayer' || 'WalletComplete'))
           updateWalletDebounced();
       });
-    }); 
+    });
 
     $scope.$on("$ionicView.leave", function(event, data) {
       listener();
@@ -30,7 +30,7 @@ angular.module('copayApp.controllers').controller('copayersController',
           return popupService.showAlert(bwcError.msg(err, gettextCatalog.getString('Could not update wallet')));
         }
         $scope.wallet.status = status;
-        $scope.copayers = $scope.wallet.status.wallet.copayers;
+        $scope.zelers = $scope.wallet.status.wallet.zelers;
         $scope.secret = $scope.wallet.status.wallet.secret;
         $timeout(function() {
           $scope.$apply();
@@ -99,7 +99,7 @@ angular.module('copayApp.controllers').controller('copayersController',
         disableAnimate: true,
         historyRoot: true
       });
-      $ionicHistory.clearHistory(); 
+      $ionicHistory.clearHistory();
     };
 
   });

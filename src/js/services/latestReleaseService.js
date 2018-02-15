@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.services')
+angular.module('zelApp.services')
   .factory('latestReleaseService', function latestReleaseServiceFactory($log, $http, configService) {
 
     var root = {};

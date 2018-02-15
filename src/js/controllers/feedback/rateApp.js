@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('rateAppController', function($scope, $state, $stateParams, $window, lodash, externalLinkService, configService, platformInfo, feedbackService, ongoingProcess, popupService, appConfigService) {
+angular.module('zelApp.controllers').controller('rateAppController', function($scope, $state, $stateParams, $window, lodash, externalLinkService, configService, platformInfo, feedbackService, ongoingProcess, popupService, appConfigService) {
   $scope.score = parseInt($stateParams.score);
   $scope.appName = appConfigService.nameCase;
   var isAndroid = platformInfo.isAndroid;
@@ -39,9 +39,9 @@ angular.module('copayApp.controllers').controller('rateAppController', function(
     var defaults = configService.getDefaults();
     var url;
     if (isAndroid)
-      url = $scope.appName == 'Zelcash Wallet' ? defaults.rateApp.copay.android : defaults.rateApp.zelcom.android;
+      url = $scope.appName == 'Zelcash Wallet' ? defaults.rateApp.zel.android : defaults.rateApp.zelcom.android;
     if (isIOS)
-      url = $scope.appName == 'Zelcash Wallet' ? defaults.rateApp.copay.ios : defaults.rateApp.zelcom.ios;
+      url = $scope.appName == 'Zelcash Wallet' ? defaults.rateApp.zel.ios : defaults.rateApp.zelcom.ios;
 
     externalLinkService.open(url);
     $state.go('tabs.rate.complete', {

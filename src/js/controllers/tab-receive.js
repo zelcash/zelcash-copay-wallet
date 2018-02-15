@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('tabReceiveController', function($rootScope, $scope, $timeout, $log, $ionicModal, $state, $ionicHistory, $ionicPopover, storageService, platformInfo, walletService, profileService, configService, lodash, gettextCatalog, popupService, bwcError) {
+angular.module('zelApp.controllers').controller('tabReceiveController', function($rootScope, $scope, $timeout, $log, $ionicModal, $state, $ionicHistory, $ionicPopover, storageService, platformInfo, walletService, profileService, configService, lodash, gettextCatalog, popupService, bwcError) {
 
   var listeners = [];
   $scope.isCordova = platformInfo.isCordova;
@@ -39,7 +39,7 @@ angular.module('copayApp.controllers').controller('tabReceiveController', functi
     });
     $state.go('tabs.home');
     $timeout(function() {
-      $state.transitionTo('tabs.copayers', {
+      $state.transitionTo('tabs.zelers', {
         walletId: $scope.wallet.credentials.walletId
       });
     }, 100);

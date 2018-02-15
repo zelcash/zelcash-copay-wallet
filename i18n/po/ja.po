@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: zel\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: zel\n"
 "X-Crowdin-Language: ja\n"
 "X-Crowdin-File: template.pot\n"
 "Last-Translator: cmgustavo83\n"
@@ -23,7 +23,7 @@ msgid "(possible double spend)"
 msgstr "(二重払い可能性あり)"
 
 #: www/views/modals/txp-details.html:161
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other zeler has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* 送金の提案の取下げは①他のウォレット参加者に署名されていなかった場合、提案者に提案を取り下げることができます。②提案の起案から24時間が経っても解決しなかった場合、全員に取り下げることができます。"
 
 #: www/views/tx-details.html:84
@@ -244,7 +244,7 @@ msgstr "見られていませんか？"
 msgid "Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin."
 msgstr "見られていますか？ 復元フレーズを知る者はあなたのビットコインが勝手に送れてしまいます。"
 
-#: src/js/controllers/copayers.js:56
+#: src/js/controllers/zelers.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
 msgstr "本当にこのウォレットをキャンセルし、削除しても\n"
 "宜しいですか？"
@@ -463,7 +463,7 @@ msgstr "手数料計算中..."
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: www/views/copayers.html:36
+#: www/views/zelers.html:36
 msgid "Cancel invitation"
 msgstr "招待状のキャンセル"
 
@@ -555,7 +555,7 @@ msgstr "完了"
 #: src/js/controllers/buyAmazon.js:311
 #: src/js/controllers/buyMercadoLibre.js:305
 #: src/js/controllers/confirm.js:528
-#: src/js/controllers/copayers.js:55
+#: src/js/controllers/zelers.js:55
 #: src/js/controllers/topup.js:285
 #: www/views/backup.html:53
 #: www/views/backup.html:72
@@ -639,7 +639,7 @@ msgstr "ウォレット参加者が加わりました"
 msgid "Copayer {{$index}}"
 msgstr "ウォレット参加者 {{$index}}"
 
-#: src/js/controllers/copayers.js:79
+#: src/js/controllers/zelers.js:79
 #: src/js/controllers/export.js:193
 #: www/views/includes/copyToClipboard.html:4
 msgid "Copied to clipboard"
@@ -792,7 +792,7 @@ msgstr "取引履歴を更新できませんでした。"
 
 #: src/js/controllers/addresses.js:29
 #: src/js/controllers/addresses.js:37
-#: src/js/controllers/copayers.js:30
+#: src/js/controllers/zelers.js:30
 #: src/js/controllers/walletDetails.js:78
 msgid "Could not update wallet"
 msgstr "ウォレットが更新できませんでした。"
@@ -872,7 +872,7 @@ msgstr "送金の提案を削除"
 msgid "Delete Wallet"
 msgstr "ウォレットを削除"
 
-#: www/views/copayers.html:59
+#: www/views/zelers.html:59
 msgid "Delete it and create a new one"
 msgstr "削除して新規作成"
 
@@ -1032,7 +1032,7 @@ msgstr "パスワードを入力して下さい。"
 #: src/js/controllers/buyMercadoLibre.js:24
 #: src/js/controllers/buyMercadoLibre.js:35
 #: src/js/controllers/confirm.js:286
-#: src/js/controllers/copayers.js:67
+#: src/js/controllers/zelers.js:67
 #: src/js/controllers/create.js:161
 #: src/js/controllers/create.js:174
 #: src/js/controllers/create.js:180
@@ -1602,7 +1602,7 @@ msgstr "無効のデータ"
 msgid "Invalid derivation path"
 msgstr "無効な派生パス"
 
-#: src/js/controllers/copayers.js:90
+#: src/js/controllers/zelers.js:90
 msgid "Invitation to share a {{appName}} Wallet"
 msgstr "{{appName}} 共有ウォレットへの招待"
 
@@ -1635,7 +1635,7 @@ msgstr "正確に復元フレーズを書き留めることが大変重要です
 msgid "Join"
 msgstr "参加"
 
-#: src/js/controllers/copayers.js:85
+#: src/js/controllers/zelers.js:85
 msgid "Join my {{appName}} Wallet. Here is the invitation code: {{secret}} You can download {{appName}} for your phone or desktop at {{appUrl}}"
 msgstr "{{appName}}の共有ウォレット作りました： {{secret}} この招待コードを入力して、ウォレットに参加して下さい。アプリのダウンロードは {{appUrl}} にてどうぞ！"
 
@@ -1732,7 +1732,7 @@ msgstr "わかりました"
 msgid "Matches:"
 msgstr "結果:"
 
-#: www/views/includes/copayers.html:4
+#: www/views/includes/zelers.html:4
 #: www/views/preferencesInformation.html:85
 msgid "Me"
 msgstr "自分"
@@ -2639,8 +2639,8 @@ msgstr "設定"
 msgid "Share the love by inviting your friends."
 msgstr "是非友達と共有して下さい"
 
-#: www/views/copayers.html:20
-msgid "Share this invitation with your copayers"
+#: www/views/zelers.html:20
+msgid "Share this invitation with your zelers"
 msgstr "ウォレット参加者に\n"
 "この招待コードを\n"
 "送って下さい。"
@@ -3013,7 +3013,7 @@ msgid "Total Locked Balance"
 msgstr "ロック中の残高"
 
 #: www/views/tab-create-shared.html:35
-msgid "Total number of copayers"
+msgid "Total number of zelers"
 msgstr "参加人数を選択して下さい。"
 
 #: www/views/addresses.html:81
@@ -3195,11 +3195,11 @@ msgstr "Ledger を待っています..."
 msgid "Waiting for Trezor..."
 msgstr "Trezor を待っています..."
 
-#: www/views/copayers.html:48
-msgid "Waiting for copayers"
+#: www/views/zelers.html:48
+msgid "Waiting for zelers"
 msgstr "ウォレット参加者を待っています"
 
-#: www/views/copayers.html:53
+#: www/views/zelers.html:53
 msgid "Waiting..."
 msgstr "少々お待ち下さい…"
 
@@ -3291,7 +3291,7 @@ msgstr "{{appName}}内の既存のウォレットです"
 msgid "Wallet created"
 msgstr "ウォレットが作成されました"
 
-#: www/views/copayers.html:58
+#: www/views/zelers.html:58
 msgid "Wallet incomplete and broken"
 msgstr "ウォレットが未完成で破損しています"
 
@@ -3588,7 +3588,7 @@ msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "{{updatingTxHistoryProgress}} 個の取引ダウンロード済み"
 
 #: www/views/cashScan.html:32
-#: www/views/copayers.html:46
+#: www/views/zelers.html:46
 #: www/views/includes/walletInfo.html:18
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}-of-{{wallet.n}}"

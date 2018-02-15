@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: zel\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: zel\n"
 "X-Crowdin-Language: pl\n"
 "X-Crowdin-File: template.pot\n"
 "Last-Translator: cmgustavo83\n"
@@ -23,7 +23,7 @@ msgid "(possible double spend)"
 msgstr "(możliwa podwójna wypłata)"
 
 #: www/views/modals/txp-details.html:161
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other zeler has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* Wniosek wypłaty może być usunięty jeśli: 1) Po utworzeniu nie zatwierdził go żaden inny współwłaściciel portfela lub 2) minęły 24 godziny od kiedy wniosek został utworzony."
 
 #: www/views/tx-details.html:84
@@ -244,7 +244,7 @@ msgstr "Czy jesteś obserwowany?"
 msgid "Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin."
 msgstr "Czy jesteś obserwowany? Każdy, kto zdobędzie twoją kluczową frazę może uzyskać dostęp do portfela i wydać twoje bitcoiny."
 
-#: src/js/controllers/copayers.js:56
+#: src/js/controllers/zelers.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
 msgstr "Czy na pewno chcesz usunąć ten portfel?"
 
@@ -461,7 +461,7 @@ msgstr "Obliczanie prowizji"
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: www/views/copayers.html:36
+#: www/views/zelers.html:36
 msgid "Cancel invitation"
 msgstr "Anuluj zaproszenie"
 
@@ -553,7 +553,7 @@ msgstr "Zakończono"
 #: src/js/controllers/buyAmazon.js:311
 #: src/js/controllers/buyMercadoLibre.js:305
 #: src/js/controllers/confirm.js:528
-#: src/js/controllers/copayers.js:55
+#: src/js/controllers/zelers.js:55
 #: src/js/controllers/topup.js:285
 #: www/views/backup.html:53
 #: www/views/backup.html:72
@@ -637,7 +637,7 @@ msgstr "Współwłaściciel dołączył"
 msgid "Copayer {{$index}}"
 msgstr "Współwłaściciele {{$index}}"
 
-#: src/js/controllers/copayers.js:79
+#: src/js/controllers/zelers.js:79
 #: src/js/controllers/export.js:193
 #: www/views/includes/copyToClipboard.html:4
 msgid "Copied to clipboard"
@@ -790,7 +790,7 @@ msgstr "Nie można zaktualizować historii transakcji"
 
 #: src/js/controllers/addresses.js:29
 #: src/js/controllers/addresses.js:37
-#: src/js/controllers/copayers.js:30
+#: src/js/controllers/zelers.js:30
 #: src/js/controllers/walletDetails.js:78
 msgid "Could not update wallet"
 msgstr "Nie można zaktualizować portfela"
@@ -870,7 +870,7 @@ msgstr "Usuń wniosek wypłaty"
 msgid "Delete Wallet"
 msgstr "Usuń portfel"
 
-#: www/views/copayers.html:59
+#: www/views/zelers.html:59
 msgid "Delete it and create a new one"
 msgstr "Usuń i utwórz nowy portfel"
 
@@ -1030,7 +1030,7 @@ msgstr "Wprowadź hasło"
 #: src/js/controllers/buyMercadoLibre.js:24
 #: src/js/controllers/buyMercadoLibre.js:35
 #: src/js/controllers/confirm.js:286
-#: src/js/controllers/copayers.js:67
+#: src/js/controllers/zelers.js:67
 #: src/js/controllers/create.js:161
 #: src/js/controllers/create.js:174
 #: src/js/controllers/create.js:180
@@ -1600,7 +1600,7 @@ msgstr "Nieprawidłowe dane"
 msgid "Invalid derivation path"
 msgstr "Nieprawidłowa ścieżka derywacji"
 
-#: src/js/controllers/copayers.js:90
+#: src/js/controllers/zelers.js:90
 msgid "Invitation to share a {{appName}} Wallet"
 msgstr "Zaproszenie do współdzielenia portfela {{appName}}"
 
@@ -1633,7 +1633,7 @@ msgstr "Ważne, aby prawidłowo zapisać kluczową frazę. Jeśli coś stanie si
 msgid "Join"
 msgstr "Dołącz"
 
-#: src/js/controllers/copayers.js:85
+#: src/js/controllers/zelers.js:85
 msgid "Join my {{appName}} Wallet. Here is the invitation code: {{secret}} You can download {{appName}} for your phone or desktop at {{appUrl}}"
 msgstr "Dołącz do mojego portfela {{appName}}. Kod zaproszenia: {{secret}}. Wersję desktopową lub aplikację na telefon można pobrać z {{appUrl}}"
 
@@ -1730,7 +1730,7 @@ msgstr "Brzmi sensownie"
 msgid "Matches:"
 msgstr "Dopasowania:"
 
-#: www/views/includes/copayers.html:4
+#: www/views/includes/zelers.html:4
 #: www/views/preferencesInformation.html:85
 msgid "Me"
 msgstr "Ja"
@@ -2637,8 +2637,8 @@ msgstr "Ustawienia"
 msgid "Share the love by inviting your friends."
 msgstr "Podziel się miłością, zapraszając swoich przyjaciół."
 
-#: www/views/copayers.html:20
-msgid "Share this invitation with your copayers"
+#: www/views/zelers.html:20
+msgid "Share this invitation with your zelers"
 msgstr "Wyślij zaproszenie współwłaścicielom portfela"
 
 #: src/js/controllers/feedback/complete.js:5
@@ -3007,7 +3007,7 @@ msgid "Total Locked Balance"
 msgstr "Łącznie zablokowane środki"
 
 #: www/views/tab-create-shared.html:35
-msgid "Total number of copayers"
+msgid "Total number of zelers"
 msgstr "Liczba współwłaścicieli portfela"
 
 #: www/views/addresses.html:81
@@ -3189,11 +3189,11 @@ msgstr "Oczekiwanie na Ledger..."
 msgid "Waiting for Trezor..."
 msgstr "Oczekiwanie na Trezor..."
 
-#: www/views/copayers.html:48
-msgid "Waiting for copayers"
+#: www/views/zelers.html:48
+msgid "Waiting for zelers"
 msgstr "Oczekiwanie na współwłaścicieli portfela"
 
-#: www/views/copayers.html:53
+#: www/views/zelers.html:53
 msgid "Waiting..."
 msgstr "Oczekiwanie..."
 
@@ -3285,7 +3285,7 @@ msgstr ""
 msgid "Wallet created"
 msgstr "Portfel został utworzony"
 
-#: www/views/copayers.html:58
+#: www/views/zelers.html:58
 msgid "Wallet incomplete and broken"
 msgstr "Portfel niekompletny lub uszkodzony"
 
@@ -3582,7 +3582,7 @@ msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "{{updatingTxHistoryProgress}} transakcje pobrane"
 
 #: www/views/cashScan.html:32
-#: www/views/copayers.html:46
+#: www/views/zelers.html:46
 #: www/views/includes/walletInfo.html:18
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}-z-{{wallet.n}}"

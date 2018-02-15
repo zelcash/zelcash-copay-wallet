@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('txDetailsController', function($rootScope, $log, $ionicHistory, $scope, $timeout, walletService, lodash, gettextCatalog, profileService, externalLinkService, popupService, ongoingProcess, txFormatService, txConfirmNotification, feeService, configService) {
+angular.module('zelApp.controllers').controller('txDetailsController', function($rootScope, $log, $ionicHistory, $scope, $timeout, walletService, lodash, gettextCatalog, profileService, externalLinkService, popupService, ongoingProcess, txFormatService, txConfirmNotification, feeService, configService) {
 
   var txId;
   var listeners = [];
@@ -12,7 +12,7 @@ angular.module('copayApp.controllers').controller('txDetailsController', functio
     $scope.title = gettextCatalog.getString('Transaction');
     $scope.wallet = profileService.getWallet(data.stateParams.walletId);
     $scope.color = $scope.wallet.color;
-    $scope.copayerId = $scope.wallet.credentials.copayerId;
+    $scope.zelerId = $scope.wallet.credentials.zelerId;
     $scope.isShared = $scope.wallet.credentials.n > 1;
     $scope.txsUnsubscribedForNotifications = config.confirmedTxsNotifications ? !config.confirmedTxsNotifications.enabled : true;
 
@@ -44,7 +44,7 @@ angular.module('copayApp.controllers').controller('txDetailsController', functio
   });
 
   $scope.readMore = function() {
-    var url = 'https://github.com/bitpay/copay/wiki/COPAY---FAQ#amount-too-low-to-spend';
+    var url = 'https://github.com/bitpay/zel/wiki/COPAY---FAQ#amount-too-low-to-spend';
     var optIn = true;
     var title = null;
     var message = gettextCatalog.getString('Read more in our Wiki');
@@ -89,7 +89,7 @@ angular.module('copayApp.controllers').controller('txDetailsController', functio
         type: action.type,
         time: action.createdOn,
         description: actionDescriptions[action.type],
-        by: action.copayerName
+        by: action.zelerName
       });
     });
 

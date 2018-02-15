@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.directives')
+angular.module('zelApp.directives')
   .directive('validAddress', ['$rootScope', 'bitcoreZel',
     function($rootScope, bitcoreZel) {
       return {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('collectEmailController', function($scope, $state, $log, $timeout, $http, $httpParamSerializer, $ionicConfig, profileService, configService, walletService, appConfigService, emailService) {
+angular.module('zelApp.controllers').controller('collectEmailController', function($scope, $state, $log, $timeout, $http, $httpParamSerializer, $ionicConfig, profileService, configService, walletService, appConfigService, emailService) {
 
   var wallet, walletId;
   $scope.data = {};
@@ -56,7 +56,7 @@ angular.module('copayApp.controllers').controller('collectEmailController', func
         enabled: enabled,
         email: enabled ? $scope.data.email : null
       });
-          
+
       if ($scope.data.accept) collectEmail();
 
       $timeout(function() {

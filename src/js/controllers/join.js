@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('joinController',
+angular.module('zelApp.controllers').controller('joinController',
   function($scope, $rootScope, $timeout, $state, $ionicHistory, $ionicScrollDelegate, profileService, configService, storageService, applicationService, gettextCatalog, lodash, ledger, trezor, intelTEE, derivationPathHelper, ongoingProcess, walletService, $log, $stateParams, popupService, appConfigService) {
 
     $scope.$on("$ionicView.beforeEnter", function(event, data) {
@@ -58,7 +58,7 @@ angular.module('copayApp.controllers').controller('joinController',
 
     if ($stateParams.url) {
       var data = $stateParams.url;
-      data = data.replace('copay:', '');
+      data = data.replace('zel:', '');
       $scope.onQrCodeScannedJoin(data);
     }
 
@@ -77,7 +77,7 @@ angular.module('copayApp.controllers').controller('joinController',
 
       */
 
-      if (appConfigService.name == 'copay') {
+      if (appConfigService.name == 'zel') {
         if (walletService.externalSource.ledger.supported) {
           $scope.seedOptions.push({
             id: walletService.externalSource.ledger.id,
@@ -210,7 +210,7 @@ angular.module('copayApp.controllers').controller('joinController',
             });
             $state.go('tabs.home');
             $timeout(function() {
-              $state.transitionTo('tabs.copayers', {
+              $state.transitionTo('tabs.zelers', {
                 walletId: client.credentials.walletId
               });
             });
