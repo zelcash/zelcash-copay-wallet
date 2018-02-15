@@ -11,7 +11,7 @@ angular.module('copayApp.controllers').controller('joinController',
       $scope.formData.derivationPath = derivationPathHelper.default;
       $scope.formData.account = 1;
       $scope.formData.secret = null;
-      $scope.formData.coin = 'btcz';
+      $scope.formData.coin = 'zel';
       if (config.cashSupport) $scope.enableCash = true;
       resetPasswordFields();
       updateSeedSourceSelect();

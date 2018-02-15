@@ -39,9 +39,9 @@ angular.module('copayApp.controllers').controller('rateAppController', function(
     var defaults = configService.getDefaults();
     var url;
     if (isAndroid)
-      url = $scope.appName == 'BitcoinZ Wallet' ? defaults.rateApp.copay.android : defaults.rateApp.btczcom.android;
+      url = $scope.appName == 'Zelcash Wallet' ? defaults.rateApp.copay.android : defaults.rateApp.zelcom.android;
     if (isIOS)
-      url = $scope.appName == 'BitcoinZ Wallet' ? defaults.rateApp.copay.ios : defaults.rateApp.btczcom.ios;
+      url = $scope.appName == 'Zelcash Wallet' ? defaults.rateApp.copay.ios : defaults.rateApp.zelcom.ios;
 
     externalLinkService.open(url);
     $state.go('tabs.rate.complete', {

@@ -40,21 +40,21 @@ angular.module('copayApp.controllers').controller('customAmountController', func
         data.stateParams.amount,
         data.stateParams.currency);
 
-      // Amount in USD or BTCZ
+      // Amount in USD or zel
       var amount = parsedAmount.amount;
       var currency = parsedAmount.currency;
       $scope.amountUnitStr = parsedAmount.amountUnitStr;
 
-      if (currency != 'BTCZ' && currency != 'BCH') {
-        // Convert to BTCZ or BCH
+      if (currency != 'ZEL') {
+        // Convert to zel or BCH
         var config = configService.getSync().wallet.settings;
         var amountUnit = txFormatService.satToUnit(parsedAmount.amountSat);
-        var btczParsedAmount = txFormatService.parseAmount($scope.wallet.coin, amountUnit, $scope.wallet.coin);
+        var zelParsedAmount = txFormatService.parseAmount($scope.wallet.coin, amountUnit, $scope.wallet.coin);
 
-        $scope.amountBtc = btczParsedAmount.amount;
-        $scope.altAmountStr = btczParsedAmount.amountUnitStr;
+        $scope.amountBtc = zelParsedAmount.amount;
+        $scope.altAmountStr = zelParsedAmount.amountUnitStr;
       } else {
-        $scope.amountBtc = amount; // BTCZ or BCH
+        $scope.amountBtc = amount; // zel or BCH
         $scope.altAmountStr = txFormatService.formatAlternativeStr($scope.wallet.coin, parsedAmount.amountSat);
       }
     });
@@ -69,16 +69,12 @@ angular.module('copayApp.controllers').controller('customAmountController', func
 
   $scope.shareAddress = function() {
     if (!platformInfo.isCordova) return;
-    var protocol = 'bitcoin';
-    if ($scope.wallet.coin == 'bch') protocol += 'cash';
-    var data = protocol + ':' + $scope.address + '?amount=' + $scope.amountBtc;
+    var data = 'zel:' + $scope.address + '?amount=' + $scope.amountBtc;
     window.plugins.socialsharing.share(data, null, null, null);
   }
 
   $scope.copyToClipboard = function() {
-    var protocol = 'bitcoin';
-    if ($scope.wallet.coin == 'bch') protocol += 'cash';
-    return protocol + ':' + $scope.address + '?amount=' + $scope.amountBtc;
+    return 'zel:' + $scope.address + '?amount=' + $scope.amountBtc;
   };
 
 });

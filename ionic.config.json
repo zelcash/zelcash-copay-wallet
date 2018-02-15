@@ -1,6 +1,6 @@
 {
-  "name": "BitcoinZ Wallet",
-  "app_id": "com.btczcom.btcz-wallet-osx",
+  "name": "Zelcash Wallet",
+  "app_id": "com.zelcash.wallet-osx",
   "integrations": {
     "cordova": {}
   },

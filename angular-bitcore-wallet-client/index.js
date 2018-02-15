@@ -1,5 +1,5 @@
 var bwcModule = angular.module('bwcModule', []);
-var Client = require('../node_modules/bitcore-wallet-client-btcz');
+var Client = require('../node_modules/bitcore-wallet-client-zel');
 
 bwcModule.constant('MODULE_VERSION', '1.0.0');
 
@@ -9,8 +9,8 @@ bwcModule.provider("bwcService", function() {
   provider.$get = function() {
     var service = {};
 
-    service.getBitcoreBtcz = function() {
-      return Client.BitcoreBtcz;
+    service.getBitcoreZel = function() {
+      return Client.BitcoreZel;
     };
 
     service.getErrors = function() {
@@ -34,7 +34,7 @@ bwcModule.provider("bwcService", function() {
 
       //note opts use `bwsurl` all lowercase;
       var bwc = new Client({
-        baseUrl: opts.bwsurl || 'https://bws.btcz.rocks/bws/api',
+        baseUrl: opts.bwsurl || 'https://bws.zel.cash/bws/api',
         verbose: opts.verbose,
         timeout: 100000,
         transports: ['polling'],

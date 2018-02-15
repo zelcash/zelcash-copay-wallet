@@ -1,9 +1,9 @@
 {
   "//": "        Modify it in the app-template directory",
   "name": "copay",
-  "description": "A Secure BitcoinZ Wallet",
-  "author": "BitcoinZ Community",
-  "version": "10.0.4",
+  "description": "A Secure Zelcash Wallet",
+  "author": "Zelcash Community",
+  "version": "10.0.7",
   "keywords": [
     "bitcoin",
     "wallet",
@@ -13,9 +13,9 @@
     "bitcore"
   ],
   "main": "www/index.html",
-  "title": "BitcoinZ",
+  "title": "Zelcash",
   "window": {
-    "title": "BitcoinZ - BitcoinZ Wallet",
+    "title": "Zelcash - Zelcash Wallet",
     "icon": "www/img/app/icon.png",
     "toolbar": false,
     "show": true,
@@ -37,14 +37,14 @@
   },
   "dom_storage_quota": 200,
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://suite.bitcoinz.ph",
+  "homepage": "https://zel.cash",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/bitcoinz-wallets/bitcoinz-copay-wallet.git",
+    "url": "git://github.com/Lumiboy/zelcash-copay-wallet.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitcoinz-wallets/bitcoinz-copay-wallet/issues"
+    "url": "https://github.com/Lumiboy/zelcash-copay-wallet/issues"
   },
   "engines": {
     "node": "6",
@@ -57,7 +57,7 @@
     "bezier-easing": "^2.0.3",
     "bhttp": "^1.2.4",
     "bitauth": "^0.2.1",
-    "bitcore-wallet-client-btcz": "git+https://github.com/bitcoinz-wallets/bitcore-wallet-client-btcz.git#v1.0.1",
+    "bitcore-wallet-client-btcz": "git+https://github.com/Lumiboy/bitcore-wallet-client-zel.git#v1.0.4",
     "bower": "^1.7.9",
     "cordova": "^7.1.0",
     "cordova-android": "^6.4.0",
@@ -110,7 +110,7 @@
     "fileicon": "^0.2.0"
   },
   "scripts": {
-    "postinstall": "sed -i  -e \"s/.*require(...\\/...);//g\" node_modules/asn1.js-rfc5280/index.js; bower install",
+    "postinstall": "sed -i  -e \"s/.*require(...\\/...);//g\" node_modules/asn1.js-rfc5280/index.js && bower install",
     "start": "npm run build:www && ionic serve --no-livereload --nogulp -s --address 0.0.0.0",
     "start:ios": "npm run build:www && npm run build:ios && npm run open:ios",
     "start:android": "npm run build:www && npm run build:android && npm run run:android",
@@ -181,7 +181,7 @@
       "cordova-plugin-wkwebview-engine": {},
       "cordova-plugin-qrscanner": {},
       "cordova-plugin-customurlscheme": {
-        "URL_SCHEME": "bitcoinz"
+        "URL_SCHEME": "zelcash"
       },
       "cordova-custom-config": {},
       "cordova-plugin-queries-schemes": {},

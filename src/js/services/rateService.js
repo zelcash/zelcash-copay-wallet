@@ -17,8 +17,8 @@ var RateService = function(opts) {
   self.httprequest = opts.httprequest; // || request;
   self.lodash = opts.lodash;
 
-  self.SAT_TO_BTCZ = 1 / 1e8;
-  self.BTCZ_TO_SAT = 1e8;
+  self.SAT_TO_ZEL = 1 / 1e8;
+  self.ZEL_TO_SAT = 1e8;
   self.UNAVAILABLE_ERROR = 'Service is not available - check for service.isAvailable() or use service.whenAvailable()';
   self.UNSUPPORTED_CURRENCY_ERROR = 'Currency not supported';
 
@@ -45,12 +45,12 @@ RateService.prototype.updateRates = function() {
 
   var backoffSeconds = 5;
   var updateFrequencySeconds = 5 * 60;
-  var rateServiceUrl = 'https://masq.bitcoinz.ph/rates';
+  var rateServiceUrl = 'https://masq.zel.cash/rates';
 
-  function getBTCZ(cb, tries) {
+  function getZEL(cb, tries) {
     tries = tries || 0;
     if (!self.httprequest) return;
-    if (tries > 5) return cb('could not get BTCZ rates');
+    if (tries > 5) return cb('could not get ZEL rates');
 
     //log.info('Fetching exchange rates');
     self.httprequest.get(rateServiceUrl).success(function(res) {
@@ -68,13 +68,13 @@ RateService.prototype.updateRates = function() {
       //log.debug('Error fetching exchange rates', err);
       setTimeout(function() {
         backoffSeconds *= 1.5;
-        getBTCZ(cb, tries++);
+        getZEL(cb, tries++);
       }, backoffSeconds * 1000);
       return;
     })
   }
 
-  getBTCZ(function(err) {
+  getZEL(function(err) {
     if (err) return;
     self._isAvailable = true;
     self.lodash.each(self._queued, function(callback) {
@@ -110,14 +110,14 @@ RateService.prototype.toFiat = function(satoshis, code, chain) {
     return null;
   }
 
-  return satoshis * this.SAT_TO_BTCZ * this.getRate(code, chain);
+  return satoshis * this.SAT_TO_ZEL * this.getRate(code, chain);
 };
 
 RateService.prototype.fromFiat = function(amount, code, chain) {
   if (!this.isAvailable()) {
     return null;
   }
-  return amount / this.getRate(code, chain) * this.BTCZ_TO_SAT;
+  return amount / this.getRate(code, chain) * this.ZEL_TO_SAT;
 };
 
 RateService.prototype.listAlternatives = function(sort) {

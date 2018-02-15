@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('copayApp.services').factory('addressbookService', function($log, bitcoreBtcz, storageService, lodash) {
+angular.module('copayApp.services').factory('addressbookService', function($log, bitcoreZel, storageService, lodash) {
   var root = {};
 
   var getNetwork = function(address) {
     var network;
-    network = (new bitcoreBtcz.Address(address)).network.name;
+    network = (new bitcoreZel.Address(address)).network.name;
     return network;
   };
 

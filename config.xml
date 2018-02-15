@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="383004" id="com.btczcom.btcz" ios-CFBundleVersion="10.0.4" version="10.0.4">
-    <name>BTCZ Wallet</name>
+<widget android-versionCode="383007" id="com.zelcash.wallet" ios-CFBundleVersion="10.0.7" version="10.0.7">
+    <name>Zelcash Wallet</name>
     <description>
-      BitcoinZ Wallet
+      Zelcash Wallet
     </description>
-    <author email="bitcoinzcommunity@gmail.com" href="https://bitcoinz.global">
-        BitcoinZ Community
+    <author email="info@zel.cash" href="https://zel.cash">
+        Zelcash Website
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -14,7 +14,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="HideKeyboardFormAccessoryBar" value="true" />
     <preference name="WindowsStoreIdentityName" value="18C7659D.Copay-SecureBitcoinWallet" />
-    <preference name="WindowsStoreDisplayName" value="BitcoinZ Wallet - Secure BitcoinZ Wallet" />
+    <preference name="WindowsStoreDisplayName" value="Zelcash Wallet - Secure Zelcash Wallet" />
     <preference name="StatusBarBackgroundColor" value="#192c3a" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="windows-target-version" value="10.0" />
@@ -126,7 +126,7 @@
     <plugin name="cordova-plugin-wkwebview-engine" spec="https://github.com/driftyco/cordova-plugin-wkwebview-engine.git#4221015eb3f309fe593a7d81205b691e27088743" />
     <plugin name="cordova-plugin-qrscanner" spec="~2.5.0" />
     <plugin name="cordova-plugin-customurlscheme" spec="^4.3.0">
-        <variable name="URL_SCHEME" value="bitcoinz" />
+        <variable name="URL_SCHEME" value="zelcash" />
     </plugin>
     <plugin name="cordova-custom-config" spec="~3.0.5" />
     <plugin name="cordova-plugin-queries-schemes" spec="~0.1.5" />

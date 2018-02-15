@@ -1,13 +1,13 @@
 'use strict';
 angular.module('copayApp.directives')
-  .directive('validAddress', ['$rootScope', 'bitcoreBtcz',
-    function($rootScope, bitcoreBtcz) {
+  .directive('validAddress', ['$rootScope', 'bitcoreZel',
+    function($rootScope, bitcoreZel) {
       return {
         require: 'ngModel',
         link: function(scope, elem, attrs, ctrl) {
           // Bitcoin address
-          var URI = bitcoreBtcz.URI;
-          var Address = bitcoreBtcz.Address
+          var URI = bitcoreZel.URI;
+          var Address = bitcoreZel.Address
 
           var validator = function(value) {
 
@@ -19,7 +19,7 @@ angular.module('copayApp.directives')
 
             // Bip21 uri
             var uri, isAddressValidLivenet, isAddressValidTestnet;
-            if (/^bitcoin:/.test(value)) {
+            if (/^zelcash:/.test(value)) {
               var isUriValid = URI.isValid(value);
               if (isUriValid) {
                 uri = new URI(value);
@@ -88,7 +88,7 @@ angular.module('copayApp.directives')
       };
     }
   ])
-  .directive('walletSecret', function(bitcoreBtcz) {
+  .directive('walletSecret', function(bitcoreZel) {
     return {
       require: 'ngModel',
       link: function(scope, elem, attrs, ctrl) {

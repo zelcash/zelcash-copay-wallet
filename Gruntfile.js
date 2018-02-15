@@ -233,7 +233,7 @@ module.exports = function(grunt) {
           'CFBundleURLTypes': [
             {
               'CFBundleURLName': 'URI Handler',
-              'CFBundleURLSchemes': ['bitcoin', '<%= pkg.name %>']
+              'CFBundleURLSchemes': ['zelcash', '<%= pkg.name %>']
             }
           ]
         }

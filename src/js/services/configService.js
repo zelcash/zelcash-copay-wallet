@@ -14,7 +14,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.btcz.rocks/bws/api',
+      url: 'https://bws.zel.cash/bws/api',
     },
 
     download: {
@@ -22,7 +22,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         url: 'https://bitpay.com/wallet'
       },
       copay: {
-        url: 'https://github.com/bitcoinz-wallets/bitcoinz-copay-wallet/releases'
+        url: 'https://github.com/Lumiboy/zelcash-copay-wallet/releases'
       }
     },
 
@@ -34,7 +34,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       },
       copay: {
         ios: 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=951330296&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8',
-        android: 'https://play.google.com/store/apps/details?id=com.btczcom.btcz-wallet',
+        android: 'https://play.google.com/store/apps/details?id=com.zelcash.wallet',
         wp: ''
       }
     },
@@ -46,10 +46,10 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       reconnectDelay: 5000,
       idleDurationMin: 4,
       settings: {
-        unitName: 'BTCZ',
+        unitName: 'ZEL',
         unitToSatoshi: 100000000,
         unitDecimals: 8,
-        unitCode: 'btcz',
+        unitCode: 'zel',
         alternativeName: 'US Dollar',
         alternativeIsoCode: 'USD',
       }
@@ -72,7 +72,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'https://masq.bitcoinz.ph/rates',
+      url: 'https://masq.zel.cash/rates',
     },
 
     release: {
@@ -150,7 +150,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         }
 
         if (configCache.wallet.settings.unitCode == 'bit') {
-          // Convert to BTCZ. Bits will be disabled
+          // Convert to ZEL. Bits will be disabled
           configCache.wallet.settings.unitName = defaultConfig.wallet.settings.unitName;
           configCache.wallet.settings.unitToSatoshi = defaultConfig.wallet.settings.unitToSatoshi;
           configCache.wallet.settings.unitDecimals = defaultConfig.wallet.settings.unitDecimals;
