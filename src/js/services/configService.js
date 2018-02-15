@@ -22,7 +22,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         url: 'https://bitpay.com/wallet'
       },
       copay: {
-        url: 'https://github.com/Lumiboy/zelcash-copay-wallet/releases'
+        url: 'https://github.com/bitcoinz-wallets/bitcoinz-copay-wallet/releases'
       }
     },
 
