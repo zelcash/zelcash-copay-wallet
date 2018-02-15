@@ -49,7 +49,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         unitName: 'ZEL',
         unitToSatoshi: 100000000,
         unitDecimals: 8,
-        unitCode: 'zel',
+        unitCode: 'ZEL',
         alternativeName: 'US Dollar',
         alternativeIsoCode: 'USD',
       }

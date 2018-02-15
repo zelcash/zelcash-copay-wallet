@@ -16,7 +16,7 @@ angular.module('copayApp.controllers').controller('importController',
       $scope.formData.bwsurl = defaults.bws.url;
       $scope.formData.derivationPath = derivationPathHelper.default;
       $scope.formData.account = 1;
-      $scope.formData.coin = 'zel';
+      $scope.formData.coin = 'ZEL';
       $scope.importErr = false;
       $scope.isCopay = appConfigService.name == 'zelcash';
       $scope.fromHardwareWallet = {

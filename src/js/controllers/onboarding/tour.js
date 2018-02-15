@@ -27,7 +27,7 @@ angular.module('copayApp.controllers').controller('tourController',
       rateService.whenAvailable(function() {
         var localCurrency = 'USD';
         var zelAmount = 1;
-        var rate = rateService.toFiat(zelAmount * 1e8, localCurrency, 'zel');
+        var rate = rateService.toFiat(zelAmount * 1e8, localCurrency, 'ZEL');
         $scope.localCurrencySymbol = '$';
         $scope.localCurrencyPerBtc = $filter('formatFiatAmount')(parseFloat(rate.toFixed(2), 10));
         $timeout(function() {

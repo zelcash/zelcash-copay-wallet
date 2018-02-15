@@ -88,7 +88,7 @@ angular.module('copayApp.controllers').controller('tabSendController', function(
   }
 
   var getCoin = function(address) {
-    return 'zel';
+    return 'ZEL';
   };
 
   var updateContactsList = function(cb) {

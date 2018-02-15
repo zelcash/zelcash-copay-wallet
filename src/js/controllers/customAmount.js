@@ -69,12 +69,12 @@ angular.module('copayApp.controllers').controller('customAmountController', func
 
   $scope.shareAddress = function() {
     if (!platformInfo.isCordova) return;
-    var data = 'zel:' + $scope.address + '?amount=' + $scope.amountBtc;
+    var data = 'ZEL:' + $scope.address + '?amount=' + $scope.amountBtc;
     window.plugins.socialsharing.share(data, null, null, null);
   }
 
   $scope.copyToClipboard = function() {
-    return 'zel:' + $scope.address + '?amount=' + $scope.amountBtc;
+    return 'ZEL:' + $scope.address + '?amount=' + $scope.amountBtc;
   };
 
 });

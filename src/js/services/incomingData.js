@@ -85,7 +85,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
     data = sanitizeUri(data);
 
     if (bitcoreZel.URI.isValid(data)) {
-        var coin = 'zel';
+        var coin = 'ZEL';
         var parsed = new bitcoreZel.URI(data);
 
         var addr = parsed.address ? parsed.address.toString() : '';
