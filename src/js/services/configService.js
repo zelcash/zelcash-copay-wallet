@@ -14,7 +14,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'http://172.16.19.87:3232/bws/api',
+      url: 'http://192.168.128.10:3232/bws/api',
     },
 
     download: {
@@ -22,7 +22,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         url: 'https://bitpay.com/wallet'
       },
       copay: {
-        url: 'https://github.com/bitcoinz-wallets/bitcoinz-copay-wallet/releases'
+        url: 'https://github.com/Lumiboy/zelcash-copay-wallet/releases'
       }
     },
 

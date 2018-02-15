@@ -34,7 +34,7 @@ bwcModule.provider("bwcService", function() {
 
       //note opts use `bwsurl` all lowercase;
       var bwc = new Client({
-        baseUrl: opts.bwsurl || 'http://172.16.19.87:3232/bws/api',
+        baseUrl: opts.bwsurl || 'http://192.168.128.10:3232/bws/api',
         verbose: opts.verbose,
         timeout: 100000,
         transports: ['polling'],
