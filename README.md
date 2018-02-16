@@ -1,7 +1,7 @@
 # WARNING #
 This software should be used at your own risk. It is experimental.
 
-<img src="https://static1.squarespace.com/static/5a63831b8c56a8aad3aff672/t/5a70b76624a694e43a30c7c6/1517336430141/Logo-Lightbackground-lessglow.png?format=1000w" alt="Zelcash" width="79">
+<img src="https://static1.squarespace.com/static/5a63831b8c56a8aad3aff672/t/5a70b76624a694e43a30c7c6/1517336430141/Logo-Lightbackground-lessglow.png?format=1000w" alt="Zelcash" width="200">
 
 Zelcash Wallet is a secure bitcoin wallet platform for both desktop and mobile devices. Zelcash Wallet uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
