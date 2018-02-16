@@ -3,7 +3,7 @@
   "name": "copay",
   "description": "A Secure Zelcash Wallet",
   "author": "Zelcash Foundation",
-  "version": "10.0.8",
+  "version": "10.0.7",
   "keywords": [
     "bitcoin",
     "wallet",
@@ -181,7 +181,7 @@
       "cordova-plugin-wkwebview-engine": {},
       "cordova-plugin-qrscanner": {},
       "cordova-plugin-customurlscheme": {
-        "URL_SCHEME": "zel"
+        "URL_SCHEME": "zelcash"
       },
       "cordova-custom-config": {},
       "cordova-plugin-queries-schemes": {},

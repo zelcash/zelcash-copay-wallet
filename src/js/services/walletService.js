@@ -1236,7 +1236,7 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
   };
 
   root.getProtocolHandler = function(wallet) {
-    return 'zel';
+    return 'zelcash';
   }
 
 

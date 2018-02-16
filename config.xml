@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="383007" id="com.zelcom.zel" ios-CFBundleVersion="10.0.7" version="10.0.7">
-    <name>ZEL Wallet</name>
+<widget android-versionCode="383007" id="com.zelcash.wallet" ios-CFBundleVersion="10.0.7" version="10.0.7">
+    <name>Zelcash Wallet</name>
     <description>
       Zelcash Wallet
     </description>
     <author email="info@zel.cash" href="https://zel.cash">
-        Zelcash Community
+        Zelcash Foundation
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -126,7 +126,7 @@
     <plugin name="cordova-plugin-wkwebview-engine" spec="https://github.com/driftyco/cordova-plugin-wkwebview-engine.git#4221015eb3f309fe593a7d81205b691e27088743" />
     <plugin name="cordova-plugin-qrscanner" spec="~2.5.0" />
     <plugin name="cordova-plugin-customurlscheme" spec="^4.3.0">
-        <variable name="URL_SCHEME" value="zel" />
+        <variable name="URL_SCHEME" value="zelcash" />
     </plugin>
     <plugin name="cordova-custom-config" spec="~3.0.5" />
     <plugin name="cordova-plugin-queries-schemes" spec="~0.1.5" />

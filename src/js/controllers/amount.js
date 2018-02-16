@@ -30,11 +30,11 @@ angular.module('copayApp.controllers').controller('amountController', function($
 
       availableUnits = [];
 
-      var hasZELWallets = profileService.getWallets({
+      var hasZelWallets = profileService.getWallets({
         coin: 'zel'
       }).length;
 
-      if (hasZELWallets) {
+      if (hasZelWallets) {
         availableUnits.push({
           name: 'Bitcoin',
           id: 'zel',

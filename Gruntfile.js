@@ -233,7 +233,7 @@ module.exports = function(grunt) {
           'CFBundleURLTypes': [
             {
               'CFBundleURLName': 'URI Handler',
-              'CFBundleURLSchemes': ['zel', '<%= pkg.name %>']
+              'CFBundleURLSchemes': ['zelcash', '<%= pkg.name %>']
             }
           ]
         }
