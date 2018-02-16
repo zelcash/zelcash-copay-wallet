@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('rateCardController', function($scope, $state, $timeout, $log, gettextCatalog, platformInfo, storageService, appConfigService) {
+angular.module('copayApp.controllers').controller('rateCardController', function($scope, $state, $timeout, $log, gettextCatalog, platformInfo, storageService, appConfigService) {
 
   $scope.isCordova = platformInfo.isCordova;
   $scope.score = 0;

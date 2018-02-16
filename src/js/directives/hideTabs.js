@@ -1,5 +1,5 @@
 'use strict';
-angular.module('zelApp.directives')
+angular.module('copayApp.directives')
 .directive('hideTabs', function($rootScope, $timeout) {
   return {
     restrict: 'A',

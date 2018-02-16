@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.filters', [])
+angular.module('copayApp.filters', [])
   .filter('amTimeAgo', ['amMoment',
     function(amMoment) {
       return function(input) {
@@ -20,7 +20,7 @@ angular.module('zelApp.filters', [])
   .filter('removeEmpty', function() {
     return function(elements) {
       elements = elements || [];
-      // Hide empty change addresses from other zelers
+      // Hide empty change addresses from other copayers
       return elements.filter(function(e) {
         return !e.isChange || e.balance > 0;
       });

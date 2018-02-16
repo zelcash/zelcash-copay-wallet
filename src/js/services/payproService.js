@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('payproService',
+angular.module('copayApp.services').factory('payproService',
   function(profileService, platformInfo, gettextCatalog, ongoingProcess, $log) {
 
     var ret = {};

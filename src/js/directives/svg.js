@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.directives')
+angular.module('copayApp.directives')
   /**
    * Replaces img tag with its svg content to allow for CSS styling of the svg.
    */
@@ -41,3 +41,4 @@ angular.module('zelApp.directives')
       }
     };
   });
+    

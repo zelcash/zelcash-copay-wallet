@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.directives')
+angular.module('copayApp.directives')
   .directive('gravatar', function(md5) {
     return {
       restrict: 'AE',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('txpDetailsController', function($scope, $rootScope, $timeout, $interval, $log, ongoingProcess, platformInfo, $ionicScrollDelegate, txFormatService, bwcError, gettextCatalog, lodash, walletService, popupService, $ionicHistory, feeService) {
+angular.module('copayApp.controllers').controller('txpDetailsController', function($scope, $rootScope, $timeout, $interval, $log, ongoingProcess, platformInfo, $ionicScrollDelegate, txFormatService, bwcError, gettextCatalog, lodash, walletService, popupService, $ionicHistory, feeService) {
   var isGlidera = $scope.isGlidera;
   var GLIDERA_LOCK_TIME = 6 * 60 * 60;
   var now = Math.floor(Date.now() / 1000);
@@ -10,8 +10,8 @@ angular.module('zelApp.controllers').controller('txpDetailsController', function
     $scope.loading = null;
     $scope.isCordova = platformInfo.isCordova;
     $scope.isWindowsPhoneApp = platformInfo.isCordova && platformInfo.isWP;
-    $scope.zelers = $scope.wallet.status.wallet.zelers;
-    $scope.zelerId = $scope.wallet.credentials.zelerId;
+    $scope.copayers = $scope.wallet.status.wallet.copayers;
+    $scope.copayerId = $scope.wallet.credentials.copayerId;
     $scope.isShared = $scope.wallet.credentials.n > 1;
     $scope.canSign = $scope.wallet.canSign() || $scope.wallet.isPrivKeyExternal();
     $scope.color = $scope.wallet.color;
@@ -76,7 +76,7 @@ angular.module('zelApp.controllers').controller('txpDetailsController', function
         type: action.type,
         time: action.createdOn,
         description: actionDescriptions[action.type],
-        by: action.zelerName
+        by: action.copayerName
       });
     });
 
@@ -222,7 +222,7 @@ angular.module('zelApp.controllers').controller('txpDetailsController', function
       }
 
       var action = lodash.find(tx.actions, {
-        zelerId: $scope.wallet.credentials.zelerId
+        copayerId: $scope.wallet.credentials.copayerId
       });
 
       $scope.tx = txFormatService.processTx($scope.wallet.coin, tx);
@@ -252,9 +252,9 @@ angular.module('zelApp.controllers').controller('txpDetailsController', function
   });
 
   $scope.updateCopayerList = function() {
-    lodash.map($scope.zelers, function(cp) {
+    lodash.map($scope.copayers, function(cp) {
       lodash.each($scope.tx.actions, function(ac) {
-        if (cp.id == ac.zelerId) {
+        if (cp.id == ac.copayerId) {
           cp.action = ac.type;
         }
       });

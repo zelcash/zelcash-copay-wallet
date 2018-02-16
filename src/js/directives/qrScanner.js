@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.directives')
+angular.module('copayApp.directives')
   .directive('qrScanner', function($state, $rootScope, $log, $ionicHistory, platformInfo, scannerService, popupService) {
 
     return {

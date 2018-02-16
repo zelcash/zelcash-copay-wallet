@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.directives')
+angular.module('copayApp.directives')
   .directive('copyToClipboard', function(platformInfo, nodeWebkitService, gettextCatalog, ionicToast, clipboard) {
     return {
       restrict: 'A',

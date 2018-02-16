@@ -1,5 +1,5 @@
 'use strict';
-angular.module('zelApp.services')
+angular.module('copayApp.services')
   .factory('applicationService', function($rootScope, $timeout, $ionicHistory, $ionicModal, platformInfo, fingerprintService, openURLService, configService, $state) {
     var root = {};
 

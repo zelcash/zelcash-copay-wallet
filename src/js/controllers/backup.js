@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('backupController',
+angular.module('copayApp.controllers').controller('backupController',
   function($scope, $timeout, $log, $state, $stateParams, $ionicHistory, lodash, profileService, bwcService, walletService, ongoingProcess, popupService, gettextCatalog, $ionicModal) {
     $scope.wallet = profileService.getWallet($stateParams.walletId);
     $scope.viewTitle = $scope.wallet.name || $scope.wallet.credentials.walletName;

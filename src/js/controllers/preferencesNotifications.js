@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('preferencesNotificationsController', function($scope, $log, $timeout, appConfigService, lodash, configService, platformInfo, pushNotificationsService, emailService) {
+angular.module('copayApp.controllers').controller('preferencesNotificationsController', function($scope, $log, $timeout, appConfigService, lodash, configService, platformInfo, pushNotificationsService, emailService) {
   var updateConfig = function() {
     var config = configService.getSync();
     $scope.appName = appConfigService.nameCase;

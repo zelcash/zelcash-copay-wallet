@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('buyAndSellService', function($log, nextStepsService, lodash, $ionicScrollDelegate, $timeout) {
+angular.module('copayApp.services').factory('buyAndSellService', function($log, nextStepsService, lodash, $ionicScrollDelegate, $timeout) {
   var root = {};
   var services = [];
   var linkedServices = [];

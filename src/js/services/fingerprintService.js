@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('fingerprintService', function($log, gettextCatalog, configService, platformInfo) {
+angular.module('copayApp.services').factory('fingerprintService', function($log, gettextCatalog, configService, platformInfo) {
   var root = {};
 
   var _isAvailable = false;

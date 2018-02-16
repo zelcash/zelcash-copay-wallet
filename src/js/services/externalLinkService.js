@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').service('externalLinkService', function(platformInfo, nodeWebkitService, popupService, gettextCatalog, $window, $log, $timeout) {
+angular.module('copayApp.services').service('externalLinkService', function(platformInfo, nodeWebkitService, popupService, gettextCatalog, $window, $log, $timeout) {
 
   var _restoreHandleOpenURL = function(old) {
     $timeout(function() {

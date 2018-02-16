@@ -13,17 +13,17 @@ var modules = [
   'angular-md5',
   'bwcModule',
   'bitauthModule',
-  'zelApp.filters',
-  'zelApp.services',
-  'zelApp.controllers',
-  'zelApp.directives',
-  'zelApp.addons'
+  'copayApp.filters',
+  'copayApp.services',
+  'copayApp.controllers',
+  'copayApp.directives',
+  'copayApp.addons'
 ];
 
-var zelApp = window.zelApp = angular.module('zelApp', modules);
+var copayApp = window.copayApp = angular.module('copayApp', modules);
 
-angular.module('zelApp.filters', []);
-angular.module('zelApp.services', []);
-angular.module('zelApp.controllers', []);
-angular.module('zelApp.directives', []);
-angular.module('zelApp.addons', []);
+angular.module('copayApp.filters', []);
+angular.module('copayApp.services', []);
+angular.module('copayApp.controllers', []);
+angular.module('copayApp.directives', []);
+angular.module('copayApp.addons', []);

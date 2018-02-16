@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('txpModalService', function(configService, profileService, $rootScope, $ionicModal) {
+angular.module('copayApp.services').factory('txpModalService', function(configService, profileService, $rootScope, $ionicModal) {
 
   var root = {};
 
@@ -12,7 +12,7 @@ angular.module('zelApp.services').factory('txpModalService', function(configServ
     scope.tx = tx;
     if (!scope.tx.toAddress) scope.tx.toAddress = tx.outputs[0].toAddress;
     scope.wallet = wallet;
-    scope.zelers = wallet ? wallet.zelers : null;
+    scope.copayers = wallet ? wallet.copayers : null;
     scope.currentSpendUnconfirmed = config.spendUnconfirmed;
     // scope.tx.hasMultiplesOutputs = true;  // Uncomment to test multiple outputs
 

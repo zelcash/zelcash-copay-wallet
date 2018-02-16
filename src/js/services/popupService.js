@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').service('popupService', function($log, $ionicPopup, platformInfo, gettextCatalog) {
+angular.module('copayApp.services').service('popupService', function($log, $ionicPopup, platformInfo, gettextCatalog) {
 
   var isCordova = platformInfo.isCordova;
   var isWindowsPhoneApp = platformInfo.isCordova && platformInfo.isWP;

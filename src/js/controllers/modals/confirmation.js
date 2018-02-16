@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('confirmationController', function($scope) {
+angular.module('copayApp.controllers').controller('confirmationController', function($scope) {
 
   $scope.ok = function() {
     $scope.loading = true;

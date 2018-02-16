@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('lockSetupController', function($state, $rootScope, $scope, $timeout, $log, configService, gettextCatalog, fingerprintService, profileService, lodash, applicationService) {
+angular.module('copayApp.controllers').controller('lockSetupController', function($state, $rootScope, $scope, $timeout, $log, configService, gettextCatalog, fingerprintService, profileService, lodash, applicationService) {
 
   function init() {
     $scope.options = [

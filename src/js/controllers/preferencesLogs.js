@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('preferencesLogs',
+angular.module('copayApp.controllers').controller('preferencesLogs',
   function($scope, historicLog, lodash, configService, gettextCatalog) {
 
     var config = configService.getSync();

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('emailService', function($log, configService, lodash, walletService, profileService) {
+angular.module('copayApp.services').factory('emailService', function($log, configService, lodash, walletService, profileService) {
   var root = {};
 
   root.updateEmail = function(opts) {
@@ -23,16 +23,16 @@ angular.module('zelApp.services').factory('emailService', function($log, configS
 
   root.getEmailIfEnabled = function(config) {
     config = config || configService.getSync();
-
+    
     if (config.emailNotifications) {
       if (!config.emailNotifications.enabled) return;
 
-      if (config.emailNotifications.email)
+      if (config.emailNotifications.email) 
         return config.emailNotifications.email;
     }
-
+    
     if (lodash.isEmpty(config.emailFor)) return;
-
+    
     // Backward compatibility
     var emails = lodash.values(config.emailFor);
     for(var i = 0; i < emails.length; i++) {
@@ -46,7 +46,7 @@ angular.module('zelApp.services').factory('emailService', function($log, configS
     configService.whenAvailable(function(config) {
 
       if (config.emailNotifications && config.emailNotifications.enabled) {
-
+        
         // If email already set
         if (config.emailNotifications.email) return;
 

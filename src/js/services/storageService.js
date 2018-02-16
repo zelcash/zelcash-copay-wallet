@@ -1,5 +1,5 @@
 'use strict';
-angular.module('zelApp.services')
+angular.module('copayApp.services')
   .factory('storageService', function(logHeader, fileStorageService, localStorageService, sjcl, $log, lodash, platformInfo, $timeout) {
 
     var root = {};

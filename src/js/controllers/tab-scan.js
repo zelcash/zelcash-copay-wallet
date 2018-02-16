@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('tabScanController', function($scope, $log, $timeout, scannerService, incomingData, $state, $ionicHistory, $rootScope) {
+angular.module('copayApp.controllers').controller('tabScanController', function($scope, $log, $timeout, scannerService, incomingData, $state, $ionicHistory, $rootScope) {
 
   var scannerStates = {
     unauthorized: 'unauthorized',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('proposalsController',
+angular.module('copayApp.controllers').controller('proposalsController',
   function($timeout, $scope, profileService, $log, txpModalService, addressbookService, timeService) {
 
     $scope.fetchingProposals = true;

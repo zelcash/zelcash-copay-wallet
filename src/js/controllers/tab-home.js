@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('tabHomeController',
+angular.module('copayApp.controllers').controller('tabHomeController',
   function($rootScope, $timeout, $scope, $state, $stateParams, $ionicModal, $ionicScrollDelegate, $window, gettextCatalog, lodash, popupService, ongoingProcess, externalLinkService, latestReleaseService, profileService, walletService, configService, $log, platformInfo, storageService, txpModalService, appConfigService, startupService, addressbookService, feedbackService, bwcError, nextStepsService, buyAndSellService, homeIntegrationsService, pushNotificationsService, timeService) {
     var wallet;
     var listeners = [];
@@ -137,7 +137,7 @@ angular.module('zelApp.controllers').controller('tabHomeController',
     };
 
     $scope.openExternalLink = function() {
-      var url = 'https://github.com/bitpay/zel/releases/latest';
+      var url = 'https://github.com/bitpay/copay/releases/latest';
       var optIn = true;
       var title = gettextCatalog.getString('Update Available');
       var message = gettextCatalog.getString('An update to this app is available. For your security, please update to the latest version.');
@@ -177,7 +177,7 @@ angular.module('zelApp.controllers').controller('tabHomeController',
 
     $scope.openWallet = function(wallet) {
       if (!wallet.isComplete()) {
-        return $state.go('tabs.zelers', {
+        return $state.go('tabs.copayers', {
           walletId: wallet.credentials.walletId
         });
       }

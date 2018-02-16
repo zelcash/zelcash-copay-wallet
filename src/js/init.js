@@ -2,9 +2,9 @@
 
 angular.element(document).ready(function() {
 
-  // Run zelApp after device is ready.
+  // Run copayApp after device is ready.
   var startAngular = function() {
-    angular.bootstrap(document, ['zelApp']);
+    angular.bootstrap(document, ['copayApp']);
   };
 
 

@@ -1,5 +1,5 @@
 'use strict';
-angular.module('zelApp.services').factory('txConfirmNotification', function txConfirmNotification($log, storageService) {
+angular.module('copayApp.services').factory('txConfirmNotification', function txConfirmNotification($log, storageService) {
   var root = {};
 
   root.checkIfEnabled = function(txid, cb) {

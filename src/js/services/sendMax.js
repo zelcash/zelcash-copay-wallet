@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').service('sendMaxService', function(feeService, configService, walletService) {
+angular.module('copayApp.services').service('sendMaxService', function(feeService, configService, walletService) {
 
   /**
    * Get sendMaxInfo

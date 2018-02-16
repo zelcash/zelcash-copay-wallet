@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('preferencesAdvancedController', function($scope, $timeout, $state, $stateParams, profileService) {
+angular.module('copayApp.controllers').controller('preferencesAdvancedController', function($scope, $timeout, $state, $stateParams, profileService) {
   var wallet = profileService.getWallet($stateParams.walletId);
   $scope.network = wallet.network;
   $scope.wallet = wallet;
