@@ -1,4 +1,4 @@
-angular.module('zelApp.controllers').controller('paperWalletController',
+angular.module('copayApp.controllers').controller('paperWalletController',
   function($scope, $timeout, $log, $ionicModal, $ionicHistory, feeService, popupService, gettextCatalog, platformInfo, configService, profileService, $state, bitcoreZel, ongoingProcess, txFormatService, $stateParams, walletService) {
 
     function _scanFunds(cb) {
@@ -59,7 +59,7 @@ angular.module('zelApp.controllers').controller('paperWalletController',
         $scope.wallet.buildTxFromPrivateKey($scope.privateKey, destinationAddress, null, function(err, testTx) {
           if (err) return cb(err);
           var rawTxLength = testTx.serialize().length;
-          feeService.getCurrentFeeRate('ZEL', 'livenet', function(err, feePerKb) {
+          feeService.getCurrentFeeRate('zel', 'livenet', function(err, feePerKb) {
             var opts = {};
             opts.fee = Math.round((feePerKb * rawTxLength) / 2000);
             $scope.wallet.buildTxFromPrivateKey($scope.privateKey, destinationAddress, opts, function(err, tx) {

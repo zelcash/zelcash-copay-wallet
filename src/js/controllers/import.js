@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('importController',
+angular.module('copayApp.controllers').controller('importController',
   function($scope, $timeout, $log, $state, $stateParams, $ionicHistory, $ionicScrollDelegate, profileService, configService, sjcl, ledger, trezor, derivationPathHelper, platformInfo, bwcService, ongoingProcess, walletService, popupService, gettextCatalog, appConfigService, hwWallet) {
 
     var reader = new FileReader();
@@ -16,9 +16,9 @@ angular.module('zelApp.controllers').controller('importController',
       $scope.formData.bwsurl = defaults.bws.url;
       $scope.formData.derivationPath = derivationPathHelper.default;
       $scope.formData.account = 1;
-      $scope.formData.coin = 'ZEL';
+      $scope.formData.coin = 'zel';
       $scope.importErr = false;
-      $scope.isCopay = appConfigService.name == 'zelcash';
+      $scope.isCopay = appConfigService.name == 'zel';
       $scope.fromHardwareWallet = {
         value: false
       };

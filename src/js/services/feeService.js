@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('feeService', function($log, $timeout, $stateParams, bwcService, walletService, configService, gettext, lodash, txFormatService, gettextCatalog) {
+angular.module('copayApp.services').factory('feeService', function($log, $timeout, $stateParams, bwcService, walletService, configService, gettext, lodash, txFormatService, gettextCatalog) {
   var root = {};
 
   var CACHE_TIME_TS = 60; // 1 min
@@ -59,7 +59,7 @@ angular.module('zelApp.services').factory('feeService', function($log, $timeout,
   };
 
   root.getFeeLevels = function(coin, cb) {
-    coin = coin || 'ZEL';
+    coin = coin || 'zel';
 
     if (cache.coin == coin && cache.updateTs > Date.now() - CACHE_TIME_TS * 1000) {
       return cb(null, cache.data, true);
@@ -68,7 +68,7 @@ angular.module('zelApp.services').factory('feeService', function($log, $timeout,
     var walletClient = bwcService.getClient();
 
     walletClient.getFeeLevels(coin, 'livenet', function(errLivenet, levelsLivenet) {
-      walletClient.getFeeLevels('ZEL', 'testnet', function(errTestnet, levelsTestnet) {
+      walletClient.getFeeLevels('zel', 'testnet', function(errTestnet, levelsTestnet) {
         if (errLivenet || errTestnet) {
           return cb(gettextCatalog.getString('Could not get dynamic fee'));
         }

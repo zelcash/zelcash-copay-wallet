@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services')
+angular.module('copayApp.services')
   .factory('intelTEE', function($log, $timeout, gettext, lodash, bitcoreZel, hwWallet, bwcService, platformInfo) {
 
     var root = {};

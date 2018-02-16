@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('amountController', function($scope, $filter, $timeout, $ionicScrollDelegate, $ionicHistory, gettextCatalog, platformInfo, lodash, configService, rateService, $stateParams, $window, $state, $log, txFormatService, ongoingProcess, popupService, bwcError, payproService, profileService, bitcoreZel, nodeWebkitService) {
+angular.module('copayApp.controllers').controller('amountController', function($scope, $filter, $timeout, $ionicScrollDelegate, $ionicHistory, gettextCatalog, platformInfo, lodash, configService, rateService, $stateParams, $window, $state, $log, txFormatService, ongoingProcess, popupService, bwcError, payproService, profileService, bitcoreZel, nodeWebkitService) {
   var _id;
   var unitToSatoshi;
   var satToUnit;
@@ -30,14 +30,14 @@ angular.module('zelApp.controllers').controller('amountController', function($sc
 
       availableUnits = [];
 
-      var hasZelWallets = profileService.getWallets({
-        coin: 'ZEL'
+      var hasZELWallets = profileService.getWallets({
+        coin: 'zel'
       }).length;
 
-      if (hasZelWallets) {
+      if (hasZELWallets) {
         availableUnits.push({
           name: 'Bitcoin',
-          id: 'ZEL',
+          id: 'zel',
           shortName: 'ZEL',
         });
       }

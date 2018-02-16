@@ -1,5 +1,5 @@
 'use strict';
-angular.module('zelApp.controllers').controller('tourController',
+angular.module('copayApp.controllers').controller('tourController',
   function($scope, $state, $log, $timeout, $filter, ongoingProcess, profileService, rateService, popupService, gettextCatalog) {
 
     $scope.data = {
@@ -27,7 +27,7 @@ angular.module('zelApp.controllers').controller('tourController',
       rateService.whenAvailable(function() {
         var localCurrency = 'USD';
         var zelAmount = 1;
-        var rate = rateService.toFiat(zelAmount * 1e8, localCurrency, 'ZEL');
+        var rate = rateService.toFiat(zelAmount * 1e8, localCurrency, 'zel');
         $scope.localCurrencySymbol = '$';
         $scope.localCurrencyPerBtc = $filter('formatFiatAmount')(parseFloat(rate.toFixed(2), 10));
         $timeout(function() {

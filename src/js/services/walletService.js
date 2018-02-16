@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('walletService', function($log, $timeout, lodash, trezor, ledger, intelTEE, storageService, configService, rateService, uxLanguage, $filter, gettextCatalog, bwcError, $ionicPopup, fingerprintService, ongoingProcess, gettext, $rootScope, txFormatService, $ionicModal, $state, bwcService, bitcoreZel, popupService) {
+angular.module('copayApp.services').factory('walletService', function($log, $timeout, lodash, trezor, ledger, intelTEE, storageService, configService, rateService, uxLanguage, $filter, gettextCatalog, bwcError, $ionicPopup, fingerprintService, ongoingProcess, gettext, $rootScope, txFormatService, $ionicModal, $state, bwcService, bitcoreZel, popupService) {
 
   // Ratio low amount warning (fee/amount) in incoming TX
   var LOW_AMOUNT_RATIO = 0.15;
@@ -144,7 +144,7 @@ angular.module('zelApp.services').factory('walletService', function($log, $timeo
         }
 
         var action = lodash.find(tx.actions, {
-          zelerId: tx.wallet.zelerId
+          copayerId: tx.wallet.copayerId
         });
 
         if (!action && tx.status == 'pending') {
@@ -1236,7 +1236,7 @@ angular.module('zelApp.services').factory('walletService', function($log, $timeo
   };
 
   root.getProtocolHandler = function(wallet) {
-    return 'zelcash';
+    return 'zel';
   }
 
 
@@ -1245,17 +1245,17 @@ angular.module('zelApp.services').factory('walletService', function($log, $timeo
 
     var walletPrivKey = bitcoreZel.PrivateKey.fromString(c.walletPrivKey);
 
-    var zeler = 1,
+    var copayer = 1,
       i = 0,
       l = c.publicKeyRing.length;
     var mainErr = null;
 
     lodash.each(c.publicKeyRing, function(item) {
-      var name = item.zelerName || ('zeler ' + zeler++);
+      var name = item.copayerName || ('copayer ' + copayer++);
       newWallet._doJoinWallet(newWallet.credentials.walletId, walletPrivKey, item.xPubKey, item.requestPubKey, name, {
         coin: newWallet.credentials.coin,
       }, function(err) {
-        //Ignore error is zeler already in wallet
+        //Ignore error is copayer already in wallet
         if (err && !(err instanceof errors.COPAYER_IN_WALLET)) {
           mainErr = err;
         }

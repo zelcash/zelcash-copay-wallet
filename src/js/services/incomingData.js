@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('incomingData', function($log, $state, $timeout, $ionicHistory, bitcoreZel, $rootScope, payproService, scannerService, appConfigService, popupService, gettextCatalog) {
+angular.module('copayApp.services').factory('incomingData', function($log, $state, $timeout, $ionicHistory, bitcoreZel, $rootScope, payproService, scannerService, appConfigService, popupService, gettextCatalog) {
 
   var root = {};
 
@@ -21,7 +21,7 @@ angular.module('zelApp.services').factory('incomingData', function($log, $state,
       var value = match[0].replace(',', '.');
       var newUri = data.replace(regex, value);
 
-      // mobile devices, uris like zel://glidera
+      // mobile devices, uris like copay://glidera
       newUri.replace('://', ':');
 
       return newUri;
@@ -85,7 +85,7 @@ angular.module('zelApp.services').factory('incomingData', function($log, $state,
     data = sanitizeUri(data);
 
     if (bitcoreZel.URI.isValid(data)) {
-        var coin = 'ZEL';
+        var coin = 'zel';
         var parsed = new bitcoreZel.URI(data);
 
         var addr = parsed.address ? parsed.address.toString() : '';
@@ -146,7 +146,7 @@ angular.module('zelApp.services').factory('incomingData', function($log, $state,
       return true;
 
       // Join
-    } else if (data && data.match(/^zel:[0-9A-HJ-NP-Za-km-z]{70,80}$/)) {
+    } else if (data && data.match(/^copay:[0-9A-HJ-NP-Za-km-z]{70,80}$/)) {
       $state.go('tabs.home', {}, {
         'reload': true,
         'notify': $state.current.name == 'tabs.home' ? false : true

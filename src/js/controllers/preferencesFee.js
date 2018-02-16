@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('preferencesFeeController', function($scope, $timeout, $ionicHistory, lodash, gettextCatalog, configService, feeService, ongoingProcess, popupService) {
+angular.module('copayApp.controllers').controller('preferencesFeeController', function($scope, $timeout, $ionicHistory, lodash, gettextCatalog, configService, feeService, ongoingProcess, popupService) {
 
   $scope.save = function(newFee) {
 
@@ -32,7 +32,7 @@ angular.module('zelApp.controllers').controller('preferencesFeeController', func
   });
 
   $scope.init = function() {
-    var coin = 'ZEL'; // TODO: only Zel in preferences
+    var coin = 'zel'; // TODO: only ZEL in preferences
     $scope.network = $scope.network || 'livenet';
     $scope.feeOpts = feeService.feeOpts;
     $scope.currentFeeLevel = $scope.feeLevel || feeService.getCurrentFeeLevel();

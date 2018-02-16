@@ -1,5 +1,5 @@
 'use strict';
-angular.module('zelApp.controllers').controller('paymentUriController',
+angular.module('copayApp.controllers').controller('paymentUriController',
   function($rootScope, $scope, $stateParams, $location, $timeout, $ionicHistory, profileService, configService, lodash, bitcoreZel, $state) {
     function strip(number) {
       return (parseFloat(number.toPrecision(12)));

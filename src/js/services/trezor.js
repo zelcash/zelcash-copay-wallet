@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services')
+angular.module('copayApp.services')
   .factory('trezor', function($log, $timeout, lodash, bitcoreZel, hwWallet, platformInfo) {
     var root = {};
 

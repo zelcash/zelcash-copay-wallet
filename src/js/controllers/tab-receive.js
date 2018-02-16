@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('tabReceiveController', function($rootScope, $scope, $timeout, $log, $ionicModal, $state, $ionicHistory, $ionicPopover, storageService, platformInfo, walletService, profileService, configService, lodash, gettextCatalog, popupService, bwcError) {
+angular.module('copayApp.controllers').controller('tabReceiveController', function($rootScope, $scope, $timeout, $log, $ionicModal, $state, $ionicHistory, $ionicPopover, storageService, platformInfo, walletService, profileService, configService, lodash, gettextCatalog, popupService, bwcError) {
 
   var listeners = [];
   $scope.isCordova = platformInfo.isCordova;
@@ -39,7 +39,7 @@ angular.module('zelApp.controllers').controller('tabReceiveController', function
     });
     $state.go('tabs.home');
     $timeout(function() {
-      $state.transitionTo('tabs.zelers', {
+      $state.transitionTo('tabs.copayers', {
         walletId: $scope.wallet.credentials.walletId
       });
     }, 100);
@@ -142,7 +142,7 @@ angular.module('zelApp.controllers').controller('tabReceiveController', function
 
   $scope.shareAddress = function() {
     if (!$scope.isCordova) return;
-    var protocol = 'zelcash';
+    var protocol = 'zel';
     window.plugins.socialsharing.share(protocol + ':' + $scope.addr, null, null, null);
   }
 });

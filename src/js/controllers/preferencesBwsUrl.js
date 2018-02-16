@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('preferencesBwsUrlController',
+angular.module('copayApp.controllers').controller('preferencesBwsUrlController',
   function($scope, $log, $stateParams, configService, applicationService, profileService, storageService, appConfigService) {
     $scope.success = null;
 
@@ -20,6 +20,8 @@ angular.module('zelApp.controllers').controller('preferencesBwsUrlController',
     };
 
     $scope.save = function() {
+
+// CHANGE THIS LUMI
 
       var bws;
       switch ($scope.bwsurl.value) {

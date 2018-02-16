@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('openURLService', function($rootScope, $ionicHistory, $document, $log, $state, platformInfo, lodash, profileService, incomingData, appConfigService) {
+angular.module('copayApp.services').factory('openURLService', function($rootScope, $ionicHistory, $document, $log, $state, platformInfo, lodash, profileService, incomingData, appConfigService) {
   var root = {};
 
   var handleOpenURL = function(args) {
@@ -83,8 +83,8 @@ angular.module('zelApp.services').factory('openURLService', function($rootScope,
 
       if (navigator.registerProtocolHandler) {
         $log.debug('Registering Browser handlers base:' + base);
-        navigator.registerProtocolHandler('zelcash', url, 'Copay Bitcoin Handler');
-        navigator.registerProtocolHandler('web+zel', url, 'Copay Wallet Handler');
+        navigator.registerProtocolHandler('zel', url, 'Copay Bitcoin Handler');
+        navigator.registerProtocolHandler('web+copay', url, 'Copay Wallet Handler');
         navigator.registerProtocolHandler('web+bitpay', url, 'BitPay Wallet Handler');
       }
     }

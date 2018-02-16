@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('configService', function(storageService, lodash, $log, $timeout, $rootScope, platformInfo, bwcService) {
+angular.module('copayApp.services').factory('configService', function(storageService, lodash, $log, $timeout, $rootScope, platformInfo, bwcService) {
   var root = {};
 
   var isWindowsPhoneApp = platformInfo.isCordova && platformInfo.isWP;
@@ -14,15 +14,15 @@ angular.module('zelApp.services').factory('configService', function(storageServi
 
     // Bitcore wallet service URL
     bws: {
-      url: 'http://192.168.128.10:3232/bws/api',
+      url: 'https://bws.zel.rocks/bws/api',
     },
 
     download: {
       bitpay: {
         url: 'https://bitpay.com/wallet'
       },
-      zel: {
-        url: 'https://github.com/Lumiboy/zelcash-zel-wallet/releases'
+      copay: {
+        url: 'https://github.com/bitcoinz-wallets/bitcoinz-copay-wallet/releases'
       }
     },
 
@@ -32,9 +32,9 @@ angular.module('zelApp.services').factory('configService', function(storageServi
         android: 'https://play.google.com/store/apps/details?id=com.bitpay.wallet',
         wp: ''
       },
-      zel: {
+      copay: {
         ios: 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=951330296&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8',
-        android: 'https://play.google.com/store/apps/details?id=com.zelcash.wallet',
+        android: 'https://play.google.com/store/apps/details?id=com.zelcom.zel-wallet',
         wp: ''
       }
     },
@@ -49,7 +49,7 @@ angular.module('zelApp.services').factory('configService', function(storageServi
         unitName: 'ZEL',
         unitToSatoshi: 100000000,
         unitDecimals: 8,
-        unitCode: 'ZEL',
+        unitCode: 'zel',
         alternativeName: 'US Dollar',
         alternativeIsoCode: 'USD',
       }
@@ -76,7 +76,7 @@ angular.module('zelApp.services').factory('configService', function(storageServi
     },
 
     release: {
-      url: 'https://api.github.com/repos/bitcoinz-wallets/bitcoinz-zel-wallet/releases/latest'
+      url: 'https://api.github.com/repos/bitcoinz-wallets/bitcoinz-copay-wallet/releases/latest'
     },
 
     pushNotificationsEnabled: true,

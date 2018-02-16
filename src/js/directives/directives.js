@@ -1,5 +1,5 @@
 'use strict';
-angular.module('zelApp.directives')
+angular.module('copayApp.directives')
   .directive('validAddress', ['$rootScope', 'bitcoreZel',
     function($rootScope, bitcoreZel) {
       return {
@@ -19,7 +19,7 @@ angular.module('zelApp.directives')
 
             // Bip21 uri
             var uri, isAddressValidLivenet, isAddressValidTestnet;
-            if (/^zelcash:/.test(value)) {
+            if (/^zel:/.test(value)) {
               var isUriValid = URI.isValid(value);
               if (isUriValid) {
                 uri = new URI(value);

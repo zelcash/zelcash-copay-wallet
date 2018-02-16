@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('preferencesAltCurrencyController',
+angular.module('copayApp.controllers').controller('preferencesAltCurrencyController',
   function($scope, $log, $timeout, $ionicHistory, configService, rateService, lodash, profileService, walletService, storageService) {
 
     var next = 10;

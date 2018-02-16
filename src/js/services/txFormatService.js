@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('txFormatService', function($filter, bwcService, rateService, configService, lodash) {
+angular.module('copayApp.services').factory('txFormatService', function($filter, bwcService, rateService, configService, lodash) {
   var root = {};
 
   root.Utils = bwcService.getUtils();
@@ -157,7 +157,7 @@ angular.module('zelApp.services').factory('txFormatService', function($filter, b
       tx = txFormatService.processTx(tx.wallet.coin, tx);
 
       var action = lodash.find(tx.actions, {
-        zelerId: tx.wallet.zelerId
+        copayerId: tx.wallet.copayerId
       });
 
       if (!action && tx.status == 'pending') {

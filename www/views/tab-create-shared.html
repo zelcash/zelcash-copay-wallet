@@ -33,7 +33,7 @@
 
         <label class="item item-input item-select">
           <div class="input-label" translate>
-            Total number of zelers
+            Total number of copayers
           </div>
           <select class="m10t" ng-model="formData.totalCopayers" ng-options="totalCopayers as totalCopayers for totalCopayers in TCValues"
             ng-change="setTotalCopayers(formData.totalCopayers)">
@@ -143,7 +143,7 @@
             ng-model="formData.derivationPath">
           </label>
 
-          <ion-toggle ng-show="formData.seedSource.supportsTestnet && formData.coin == 'ZEL'" ng-model="formData.testnetEnabled" toggle-class="toggle-positive">
+          <ion-toggle ng-show="formData.seedSource.supportsTestnet && formData.coin == 'zel'" ng-model="formData.testnetEnabled" toggle-class="toggle-positive">
             Testnet
           </ion-toggle>
 

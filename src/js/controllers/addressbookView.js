@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('addressbookViewController', function($scope, $state, $timeout, lodash, addressbookService, popupService, $ionicHistory, platformInfo, gettextCatalog) {
+angular.module('copayApp.controllers').controller('addressbookViewController', function($scope, $state, $timeout, lodash, addressbookService, popupService, $ionicHistory, platformInfo, gettextCatalog) {
   $scope.isChromeApp = platformInfo.isChromeApp;
   $scope.addressbookEntry = {};
   var coin;
@@ -11,7 +11,7 @@ angular.module('zelApp.controllers').controller('addressbookViewController', fun
     $scope.addressbookEntry.email = data.stateParams.email;
     $scope.addressbookEntry.address = data.stateParams.address;
 
-    coin = 'ZEL';
+    coin = 'zel';
   });
 
   $scope.sendTo = function() {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('txDetailsController', function($rootScope, $log, $ionicHistory, $scope, $timeout, walletService, lodash, gettextCatalog, profileService, externalLinkService, popupService, ongoingProcess, txFormatService, txConfirmNotification, feeService, configService) {
+angular.module('copayApp.controllers').controller('txDetailsController', function($rootScope, $log, $ionicHistory, $scope, $timeout, walletService, lodash, gettextCatalog, profileService, externalLinkService, popupService, ongoingProcess, txFormatService, txConfirmNotification, feeService, configService) {
 
   var txId;
   var listeners = [];
@@ -12,11 +12,11 @@ angular.module('zelApp.controllers').controller('txDetailsController', function(
     $scope.title = gettextCatalog.getString('Transaction');
     $scope.wallet = profileService.getWallet(data.stateParams.walletId);
     $scope.color = $scope.wallet.color;
-    $scope.zelerId = $scope.wallet.credentials.zelerId;
+    $scope.copayerId = $scope.wallet.credentials.copayerId;
     $scope.isShared = $scope.wallet.credentials.n > 1;
     $scope.txsUnsubscribedForNotifications = config.confirmedTxsNotifications ? !config.confirmedTxsNotifications.enabled : true;
 
-    blockexplorerUrl = 'explorer.zel.cash';
+    blockexplorerUrl = 'explorer2.zel.cash';
 
     txConfirmNotification.checkIfEnabled(txId, function(res) {
       $scope.txNotification = {
@@ -44,7 +44,7 @@ angular.module('zelApp.controllers').controller('txDetailsController', function(
   });
 
   $scope.readMore = function() {
-    var url = 'https://github.com/bitpay/zel/wiki/COPAY---FAQ#amount-too-low-to-spend';
+    var url = 'https://github.com/bitpay/copay/wiki/COPAY---FAQ#amount-too-low-to-spend';
     var optIn = true;
     var title = null;
     var message = gettextCatalog.getString('Read more in our Wiki');
@@ -89,7 +89,7 @@ angular.module('zelApp.controllers').controller('txDetailsController', function(
         type: action.type,
         time: action.createdOn,
         description: actionDescriptions[action.type],
-        by: action.zelerName
+        by: action.copayerName
       });
     });
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.services').factory('addressbookService', function($log, bitcoreZel, storageService, lodash) {
+angular.module('copayApp.services').factory('addressbookService', function($log, bitcoreZel, storageService, lodash) {
   var root = {};
 
   var getNetwork = function(address) {

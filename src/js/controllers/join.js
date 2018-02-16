@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('joinController',
+angular.module('copayApp.controllers').controller('joinController',
   function($scope, $rootScope, $timeout, $state, $ionicHistory, $ionicScrollDelegate, profileService, configService, storageService, applicationService, gettextCatalog, lodash, ledger, trezor, intelTEE, derivationPathHelper, ongoingProcess, walletService, $log, $stateParams, popupService, appConfigService) {
 
     $scope.$on("$ionicView.beforeEnter", function(event, data) {
@@ -11,7 +11,7 @@ angular.module('zelApp.controllers').controller('joinController',
       $scope.formData.derivationPath = derivationPathHelper.default;
       $scope.formData.account = 1;
       $scope.formData.secret = null;
-      $scope.formData.coin = 'ZEL';
+      $scope.formData.coin = 'zel';
       if (config.cashSupport) $scope.enableCash = true;
       resetPasswordFields();
       updateSeedSourceSelect();
@@ -58,7 +58,7 @@ angular.module('zelApp.controllers').controller('joinController',
 
     if ($stateParams.url) {
       var data = $stateParams.url;
-      data = data.replace('zel:', '');
+      data = data.replace('copay:', '');
       $scope.onQrCodeScannedJoin(data);
     }
 
@@ -77,7 +77,7 @@ angular.module('zelApp.controllers').controller('joinController',
 
       */
 
-      if (appConfigService.name == 'zel') {
+      if (appConfigService.name == 'copay') {
         if (walletService.externalSource.ledger.supported) {
           $scope.seedOptions.push({
             id: walletService.externalSource.ledger.id,
@@ -210,7 +210,7 @@ angular.module('zelApp.controllers').controller('joinController',
             });
             $state.go('tabs.home');
             $timeout(function() {
-              $state.transitionTo('tabs.zelers', {
+              $state.transitionTo('tabs.copayers', {
                 walletId: client.credentials.walletId
               });
             });

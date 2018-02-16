@@ -10,7 +10,7 @@ Zelcash Wallet is a Multisig HD Wallet. Zelcash Wallet app holds the extended pr
 
 ### Backup Formats:
  * Wallet recovery phrase (RP): 12 words mnemonic backup (available from Zelcash Wallet v1.2+). The 12 words are used as wallet seed, following BIP39 specification. The wallet RP may require a passphrase to recreate the wallet (if one was specified at creation time).
- * Wallet Backup (WB): Exported data from Zelcash Wallet, containing an AES encrypted JSON with many wallet parameters (like extended private key, wallet name, extended public keys of zelers, etc. See #export-format). This data can be created from Zelcash Wallet v1.2+ (Settings -> Advanced -> Export) and it was the default backup format on previous Zelcash Wallet versions. WB can be a file (standard format for Zelcash Wallet desktop versions) or a text (standard for Zelcash Wallet mobile versions).
+ * Wallet Backup (WB): Exported data from Zelcash Wallet, containing an AES encrypted JSON with many wallet parameters (like extended private key, wallet name, extended public keys of copayers, etc. See #export-format). This data can be created from Zelcash Wallet v1.2+ (Settings -> Advanced -> Export) and it was the default backup format on previous Zelcash Wallet versions. WB can be a file (standard format for Zelcash Wallet desktop versions) or a text (standard for Zelcash Wallet mobile versions).
 
 ### Backup recovery cases
  * Case 1: Lost of device holding the wallet
@@ -19,7 +19,7 @@ Zelcash Wallet is a Multisig HD Wallet. Zelcash Wallet app holds the extended pr
 
 ### Wallet Recovery Scope
  * Basic Recovery: Wallet access is restored. It is possible to see wallet balance and past transactions. It is possible to send and receive payments.
- * Full Recovery: All the features of Partial Recovery + wallet name, zeler names are recovered, past payment proposal metadata (who signed, and notes) are recovered.
+ * Full Recovery: All the features of Partial Recovery + wallet name, copayer names are recovered, past payment proposal metadata (who signed, and notes) are recovered.
 
 ## Wallet Restore Scenarios
 
@@ -39,7 +39,7 @@ Zelcash Wallet is a Multisig HD Wallet. Zelcash Wallet app holds the extended pr
     (Using RP)
     - Enter the RP at 'Import Wallet'
       If the error "This wallet is not registered at the wallet service" appears:
-      - Go to 'Create Wallet', and enter the RP at 'Advanced Options'. Select a new name for the restored wallet. Total and required number of zelers should be set to 1.
+      - Go to 'Create Wallet', and enter the RP at 'Advanced Options'. Select a new name for the restored wallet. Total and required number of copayers should be set to 1.
       - Wallet should be recreated and access to funds should be restored.
 
     (Using WB)
@@ -61,17 +61,17 @@ Zelcash Wallet is a Multisig HD Wallet. Zelcash Wallet app holds the extended pr
 
   Case 3: Basic recovery is possible using:
 
-    A) RP of all zelers in the wallet
-      - Enter one RP at Create (at the Advanced option section). Note that the wallet configuration (M-of-N and network paramenters) needs to match the parameters that where entered when the wallet was first created. Wallet name and zeler nicknames need to be entered also, but there is no need for them to match the original wallet setup.
-      - Ask other zelers to join the wallet using the given invitation code. All zelers need to enter their RP at Join (at -> Advanced Options -> Wallet Seed).
+    A) RP of all copayers in the wallet
+      - Enter one RP at Create (at the Advanced option section). Note that the wallet configuration (M-of-N and network paramenters) needs to match the parameters that where entered when the wallet was first created. Wallet name and copayer nicknames need to be entered also, but there is no need for them to match the original wallet setup.
+      - Ask other copayers to join the wallet using the given invitation code. All copayers need to enter their RP at Join (at -> Advanced Options -> Wallet Seed).
       - Wallet should be recreated and access to funds should be restored.
 
     B) One WB and a quorum of RP of the other members.
       - Using the WB, import the wallet.
-      - Ask other zelers to import the wallet using their RP.
+      - Ask other copayers to import the wallet using their RP.
       - Wallet should be recreated and funds should be accesable
 
-      In this case, Copayers will not be able to decrypt the 'notes' field on the new Spend Proposals, because the shared secret stored at the WB is not longer known by other zelers.
+      In this case, Copayers will not be able to decrypt the 'notes' field on the new Spend Proposals, because the shared secret stored at the WB is not longer known by other copayers.
 
 
 ### Hardware wallets

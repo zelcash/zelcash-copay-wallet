@@ -1,12 +1,12 @@
 # WARNING #
 This software should be used at your own risk. It is experimental.
 
-<img src="https://raw.githubusercontent.com/bitcoinz-wallets/bitcoinz-zel-wallet/master/resources/zel/android/icon/drawable-xxxhdpi-icon.png" alt="BitcoinZ" width="79">
+<img src="https://static1.squarespace.com/static/5a63831b8c56a8aad3aff672/t/5a70b76624a694e43a30c7c6/1517336430141/Logo-Lightbackground-lessglow.png?format=1000w" alt="Zelcash" width="79">
 
 Zelcash Wallet is a secure bitcoin wallet platform for both desktop and mobile devices. Zelcash Wallet uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
-Binary versions of Zelcash Wallet are available for download at [zel.cash](https://www.zel.cash/#wallets).
-For a list of frequently asked questions please visit the [Copay FAQ](https://github.com/bitpay/zel/wiki/COPAY---FAQ).
+Binary versions of Zelcash Wallet are available for download at [zel.cash](https://www.zel.cash).
+For a list of frequently asked questions please visit the [Copay FAQ](https://github.com/bitpay/copay/wiki/COPAY---FAQ).
 
 ## Main Features
 
@@ -26,18 +26,18 @@ For a list of frequently asked questions please visit the [Copay FAQ](https://gi
 - Push notifications (only available for ios and android versions)
 - Customizable wallet naming and background colors
 - Multiple languages supported
-- Available for [iOS](https://itunes.apple.com/us/app/zel/id951330296), [Android](https://play.google.com/store/apps/details?id=com.btczcom.btcz-wallet),
-[Linux](https://github.com/bitcoinz-wallets/bitcoinz-zel-wallet/tags), [Windows](https://github.com/bitcoinz-wallets/bitcoinz-zel-wallet/tags) and [OS X](https://github.com/bitcoinz-wallets/bitcoinz-zel-wallet/tags) devices
+- Available for [iOS](https://itunes.apple.com/us/app/copay/id951330296), [Android](https://play.google.com/store/apps/details?id=com.zelcom.zel-wallet),
+[Linux](https://github.com/Lumiboy/zelcash-copay-wallet/tags), [Windows](https://github.com/Lumiboy/zelcash-copay-wallet/tags) and [OS X](https://github.com/Lumiboy/zelcash-copay-wallet/tags) devices
 
 ## Testing in a Browser
 
-> **Note:** This method should only be used for development purposes. When running Zelcash Wallet in a normal browser environment, browser extensions and other malicious code might have access to internal data and private keys. For production use, see the latest official [releases](https://github.com/bitcoinz-wallets/bitcoinz-zel-wallet/tags).
+> **Note:** This method should only be used for development purposes. When running Zelcash Wallet in a normal browser environment, browser extensions and other malicious code might have access to internal data and private keys. For production use, see the latest official [releases](https://github.com/Lumiboy/zelcash-copay-wallet/tags).
 
 Clone the repo and open the directory:
 
 ```
-git clone https://github.com/bitcoinz-wallets/bitcoinz-zel-wallet.git
-cd btcz-wallet
+git clone https://github.com/Lumiboy/zelcash-copay-wallet.git
+cd zel-wallet
 ```
 
 Install npm modules
@@ -175,7 +175,7 @@ grunt
 make
 ```
 
-On success, the Chrome extension will be located at: `browser-extensions/chrome/zel-chrome-extension`.  To install it go to `chrome://extensions/` in your browser and ensure you have the 'developer mode' option enabled in the settings.  Then click on "Load unpacked chrome extension" and choose the directory mentioned above.
+On success, the Chrome extension will be located at: `browser-extensions/chrome/copay-chrome-extension`.  To install it go to `chrome://extensions/` in your browser and ensure you have the 'developer mode' option enabled in the settings.  Then click on "Load unpacked chrome extension" and choose the directory mentioned above.
 
 ## Configuration
 
@@ -184,7 +184,7 @@ On success, the Chrome extension will be located at: `browser-extensions/chrome/
 To enable external services, set the `COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` or `BITPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` environment variable to the location of your configuration before running the `apply` task.
 
 ```
-COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.zel/externalServices.json" npm run apply:zel
+COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.copay/externalServices.json" npm run apply:copay
 # or
 BITPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.bitpay/externalServices.json" npm run apply:bitpay
 ```
@@ -205,11 +205,11 @@ For more information regarding how addresses are generated using this procedure,
 
 Since v1.2 Zelcash uses BIP39 mnemonics for backing up wallets.  The BIP44 standard is used for wallet address derivation. Multisig wallets use P2SH addresses, while non-multisig wallets use P2PKH.
 
-Information about backup and recovery procedures is available at: https://github.com/bitcoinz-wallets/bitcoinz-zel-wallet/blob/master/backupRecovery.md
+Information about backup and recovery procedures is available at: https://github.com/Lumiboy/zelcash-copay-wallet/blob/master/backupRecovery.md
 
 Previous versions of Zelcash used files as backups. See the following section.
 
-It is possible to recover funds from a Zelcash Wallet without using Zelcash Wallet or the Wallet Service, check the [Copay Recovery Tool](https://github.com/bitpay/zel-recovery).
+It is possible to recover funds from a Zelcash Wallet without using Zelcash Wallet or the Wallet Service, check the [Copay Recovery Tool](https://github.com/bitpay/copay-recovery).
 
 
 ## Wallet Export Format
@@ -263,11 +263,11 @@ When creating or joining a wallet, Zelcash Wallet will ask for two public keys f
 
 Every time you need to sign a transaction, the device will be needed to perform the signature. Follow the on screen instructions after clicking the `send` or `accept` buttons.
 
-Finally, in case you lose the device and you have the 24 word seed for the device, you can recover access to your funds using Zelcash Wallet, see: https://github.com/bitcoinz-wallets/bitcoinz-zel-wallet/blob/master/backupRecovery.md#hardware-wallets
+Finally, in case you lose the device and you have the 24 word seed for the device, you can recover access to your funds using Zelcash Wallet, see: https://github.com/Lumiboy/zelcash-copay-wallet/blob/master/backupRecovery.md#hardware-wallets
 
 
 ## Translations
-Zelcash Wallet uses standard gettext PO files for translations and [Crowdin](https://crowdin.com/project/zel) as the front-end tool for translators.  To join our team of translators, please create an account at [Crowdin](https://crowdin.com) and translate the Zelcash Wallet documentation and application text into your native language.
+Zelcash Wallet uses standard gettext PO files for translations and [Crowdin](https://crowdin.com/project/copay) as the front-end tool for translators.  To join our team of translators, please create an account at [Crowdin](https://crowdin.com) and translate the Zelcash Wallet documentation and application text into your native language.
 
 To download and build using the latest translations from Crowdin, please use the following commands:
 
@@ -318,5 +318,5 @@ review the [guidelines for contributing](CONTRIBUTING.md).
 
 ## License
 
-Zelcash Wallet is released under the MIT License.  Please refer to the [LICENSE](https://github.com/bitpay/zel/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.
+Zelcash Wallet is released under the MIT License.  Please refer to the [LICENSE](https://github.com/bitpay/copay/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.
 # Zelcash Wallet

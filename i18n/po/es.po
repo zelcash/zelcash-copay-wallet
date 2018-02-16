@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: zel\n"
+"Project-Id-Version: copay\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: zel\n"
+"X-Crowdin-Project: copay\n"
 "X-Crowdin-Language: es-ES\n"
 "X-Crowdin-File: template.pot\n"
 "Last-Translator: cmgustavo83\n"
@@ -23,8 +23,8 @@ msgid "(possible double spend)"
 msgstr "(Posible doble gasto)"
 
 #: www/views/modals/txp-details.html:161
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other zeler has signed, or 2) 24 hours have passed since the proposal was created."
-msgstr "* Una propuesta de pago puede ser eliminada si 1) Tú eres el creador, y ningún otro zeler la haya firmado, o 2) hayan transcurrido 24 horas desde la creación de la propuesta."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgstr "* Una propuesta de pago puede ser eliminada si 1) Tú eres el creador, y ningún otro copayer la haya firmado, o 2) hayan transcurrido 24 horas desde la creación de la propuesta."
 
 #: www/views/tx-details.html:84
 msgid "- {{btx.feeRateStr}} of the transaction"
@@ -244,7 +244,7 @@ msgstr "¿Estás siendo observado?"
 msgid "Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin."
 msgstr "¿Estás siendo observado? Cualquier persona con tu copia de seguridad puede gastar tus bitcoins."
 
-#: src/js/controllers/zelers.js:56
+#: src/js/controllers/copayers.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
 msgstr "¿Estás seguro de cancelar y borrar esta billetera?"
 
@@ -302,8 +302,8 @@ msgid "BIP32 path for address derivation"
 msgstr "BIP32 para el camino de derivación de direcciones"
 
 #: www/views/cashScan.html:22
-msgid "BTCZ Wallets"
-msgstr "Billeteras BTCZ"
+msgid "ZEL Wallets"
+msgstr "Billeteras ZEL"
 
 #: www/views/preferences.html:34
 msgid "Backup"
@@ -461,7 +461,7 @@ msgstr "Calculando comisión"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: www/views/zelers.html:36
+#: www/views/copayers.html:36
 msgid "Cancel invitation"
 msgstr "Cancelar invitación"
 
@@ -553,7 +553,7 @@ msgstr "Terminadas"
 #: src/js/controllers/buyAmazon.js:311
 #: src/js/controllers/buyMercadoLibre.js:305
 #: src/js/controllers/confirm.js:528
-#: src/js/controllers/zelers.js:55
+#: src/js/controllers/copayers.js:55
 #: src/js/controllers/topup.js:285
 #: www/views/backup.html:53
 #: www/views/backup.html:72
@@ -637,7 +637,7 @@ msgstr "Copayer unido"
 msgid "Copayer {{$index}}"
 msgstr "Copayer {{$index}}"
 
-#: src/js/controllers/zelers.js:79
+#: src/js/controllers/copayers.js:79
 #: src/js/controllers/export.js:193
 #: www/views/includes/copyToClipboard.html:4
 msgid "Copied to clipboard"
@@ -790,7 +790,7 @@ msgstr "No se pudo actualizar el historial de transacciones"
 
 #: src/js/controllers/addresses.js:29
 #: src/js/controllers/addresses.js:37
-#: src/js/controllers/zelers.js:30
+#: src/js/controllers/copayers.js:30
 #: src/js/controllers/walletDetails.js:78
 msgid "Could not update wallet"
 msgstr "No se pudo actualizar la billetera"
@@ -870,7 +870,7 @@ msgstr "Eliminar Propuesta de Pago"
 msgid "Delete Wallet"
 msgstr "Eliminar billetera"
 
-#: www/views/zelers.html:59
+#: www/views/copayers.html:59
 msgid "Delete it and create a new one"
 msgstr "Borrar y crear uno nuevo"
 
@@ -1030,7 +1030,7 @@ msgstr "Ingrese su contraseña"
 #: src/js/controllers/buyMercadoLibre.js:24
 #: src/js/controllers/buyMercadoLibre.js:35
 #: src/js/controllers/confirm.js:286
-#: src/js/controllers/zelers.js:67
+#: src/js/controllers/copayers.js:67
 #: src/js/controllers/create.js:161
 #: src/js/controllers/create.js:174
 #: src/js/controllers/create.js:180
@@ -1600,7 +1600,7 @@ msgstr "Datos no válidos"
 msgid "Invalid derivation path"
 msgstr "Camino de derivación no válido"
 
-#: src/js/controllers/zelers.js:90
+#: src/js/controllers/copayers.js:90
 msgid "Invitation to share a {{appName}} Wallet"
 msgstr "Invitación para unirse a la billetera {{appName}} compartida"
 
@@ -1633,7 +1633,7 @@ msgstr "Es importante que escribas correctamente la frase de seguridad. Si algo 
 msgid "Join"
 msgstr "Unirse"
 
-#: src/js/controllers/zelers.js:85
+#: src/js/controllers/copayers.js:85
 msgid "Join my {{appName}} Wallet. Here is the invitation code: {{secret}} You can download {{appName}} for your phone or desktop at {{appUrl}}"
 msgstr "Únete a mi billetera {{appName}}. Aquí está el código de invitación: {{secret}} puede descargar {{appName}} para su teléfono o escritorio en {{appUrl}}"
 
@@ -1730,7 +1730,7 @@ msgstr "Entiendo"
 msgid "Matches:"
 msgstr "Coincidencias:"
 
-#: www/views/includes/zelers.html:4
+#: www/views/includes/copayers.html:4
 #: www/views/preferencesInformation.html:85
 msgid "Me"
 msgstr "Yo"
@@ -1897,8 +1897,8 @@ msgid "No wallets eligible for Bitcoin Cash support"
 msgstr "No hay billeteras elegibles para soporte a Bitcoin Cash"
 
 #: www/views/cashScan.html:44
-msgid "Non eligible BTCZ wallets"
-msgstr "Billeteras BTCZ no elegibles"
+msgid "Non eligible ZEL wallets"
+msgstr "Billeteras ZEL no elegibles"
 
 #: src/js/services/feeService.js:12
 msgid "Normal"
@@ -2637,9 +2637,9 @@ msgstr "Configuración"
 msgid "Share the love by inviting your friends."
 msgstr "Comparte la pasión invitando a tus amigos."
 
-#: www/views/zelers.html:20
-msgid "Share this invitation with your zelers"
-msgstr "Compartir esta invitación con sus zelers"
+#: www/views/copayers.html:20
+msgid "Share this invitation with your copayers"
+msgstr "Compartir esta invitación con sus copayers"
 
 #: src/js/controllers/feedback/complete.js:5
 #: www/views/tab-settings.html:36
@@ -3007,8 +3007,8 @@ msgid "Total Locked Balance"
 msgstr "Balance Total Bloqueado"
 
 #: www/views/tab-create-shared.html:35
-msgid "Total number of zelers"
-msgstr "Número total de zelers"
+msgid "Total number of copayers"
+msgstr "Número total de copayers"
 
 #: www/views/addresses.html:81
 msgid "Total wallet inputs"
@@ -3189,11 +3189,11 @@ msgstr "Esperando a Ledger..."
 msgid "Waiting for Trezor..."
 msgstr "Esperando a Trezor..."
 
-#: www/views/zelers.html:48
-msgid "Waiting for zelers"
-msgstr "Esperando a los demás zelers"
+#: www/views/copayers.html:48
+msgid "Waiting for copayers"
+msgstr "Esperando a los demás copayers"
 
-#: www/views/zelers.html:53
+#: www/views/copayers.html:53
 msgid "Waiting..."
 msgstr "Esperando..."
 
@@ -3285,7 +3285,7 @@ msgstr "El monedero ya existe en {{appName}}"
 msgid "Wallet created"
 msgstr "Billetera Creada"
 
-#: www/views/zelers.html:58
+#: www/views/copayers.html:58
 msgid "Wallet incomplete and broken"
 msgstr "Billetera incompleta y rota"
 
@@ -3582,7 +3582,7 @@ msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "{{updatingTxHistoryProgress}} transacciones descargadas"
 
 #: www/views/cashScan.html:32
-#: www/views/zelers.html:46
+#: www/views/copayers.html:46
 #: www/views/includes/walletInfo.html:18
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}-de-{{wallet.n}}"

@@ -1,5 +1,5 @@
 'use strict';
-angular.module('zelApp.services')
+angular.module('copayApp.services')
   .factory('profileService', function profileServiceFactory($rootScope, $timeout, $filter, $log, $state, sjcl, lodash, storageService, bwcService, configService, gettextCatalog, bwcError, uxLanguage, platformInfo, txFormatService, appConfigService) {
 
 
@@ -86,7 +86,7 @@ angular.module('zelApp.services')
       wallet.started = true;
       wallet.doNotVerifyPayPro = isChromeApp;
       wallet.network = wallet.credentials.network;
-      wallet.zelerId = wallet.credentials.zelerId;
+      wallet.copayerId = wallet.credentials.copayerId;
       wallet.m = wallet.credentials.m;
       wallet.n = wallet.credentials.n;
       wallet.coin = wallet.credentials.coin;
@@ -587,7 +587,7 @@ angular.module('zelApp.services')
       str = JSON.parse(str);
 
       if (!str.n) {
-        return cb("Backup format not recognized. If you are using a Copay Beta backup and version is older than 0.10, please see: https://github.com/bitpay/zel/issues/4730#issuecomment-244522614");
+        return cb("Backup format not recognized. If you are using a Copay Beta backup and version is older than 0.10, please see: https://github.com/bitpay/copay/issues/4730#issuecomment-244522614");
       }
 
       var addressBook = str.addressBook || {};
@@ -704,7 +704,7 @@ angular.module('zelApp.services')
       opts.m = 1;
       opts.n = 1;
       opts.networkName = 'livenet';
-      opts.coin = 'ZEL';
+      opts.coin = 'zel';
       root.createWallet(opts, cb);
     };
 
@@ -948,7 +948,7 @@ angular.module('zelApp.services')
 
             var idToName = {};
             if (wallet.cachedStatus) {
-              lodash.each(wallet.cachedStatus.wallet.zelers, function(c) {
+              lodash.each(wallet.cachedStatus.wallet.copayers, function(c) {
                 idToName[c.id] = c.name;
               });
             }

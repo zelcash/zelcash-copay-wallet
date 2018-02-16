@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zelApp.controllers').controller('tabSendController', function($scope, $rootScope, $log, $timeout, $ionicScrollDelegate, addressbookService, profileService, lodash, $state, walletService, incomingData, popupService, platformInfo, bwcError, gettextCatalog, scannerService) {
+angular.module('copayApp.controllers').controller('tabSendController', function($scope, $rootScope, $log, $timeout, $ionicScrollDelegate, addressbookService, profileService, lodash, $state, walletService, incomingData, popupService, platformInfo, bwcError, gettextCatalog, scannerService) {
 
   var originalList;
   var CONTACTS_SHOW_LIMIT;
@@ -88,7 +88,7 @@ angular.module('zelApp.controllers').controller('tabSendController', function($s
   }
 
   var getCoin = function(address) {
-    return 'ZEL';
+    return 'zel';
   };
 
   var updateContactsList = function(cb) {
