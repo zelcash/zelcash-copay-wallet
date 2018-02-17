@@ -27,15 +27,15 @@ angular.module('copayApp.controllers').controller('preferencesBwsUrlController',
       switch ($scope.bwsurl.value) {
         case 'prod':
         case 'production':
-          bws = 'https://192.168.128.10:3232/bws/api'
+          bws = 'https://bws.zelcash.online/bws/api'
           break;
         case 'sta':
         case 'staging':
-          bws = 'https://192.168.128.10:3232/bws/api'
+          bws = 'https://bws.zelcash.online/bws/api'
           break;
         case 'loc':
         case 'local':
-          bws = 'https://192.168.128.10:3232/bws/api'
+          bws = 'https://bws.zelcash.online/bws/api'
           break;
       };
       if (bws) {
