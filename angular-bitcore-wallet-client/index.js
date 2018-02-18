@@ -34,7 +34,7 @@ bwcModule.provider("bwcService", function() {
 
       //note opts use `bwsurl` all lowercase; // CHANGE THIS LUMI
       var bwc = new Client({
-        baseUrl: opts.bwsurl || 'https://bws.zelcash.online/bws/api',
+        baseUrl: opts.bwsurl || 'https://bws2.zelcash.online/bws/api',
         verbose: opts.verbose,
         timeout: 100000,
         transports: ['polling'],
