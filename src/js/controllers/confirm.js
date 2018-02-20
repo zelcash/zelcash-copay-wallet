@@ -127,7 +127,7 @@ angular.module('copayApp.controllers').controller('confirmController', function(
     try {
       networkName = (new B.Address(data.stateParams.toAddress)).network.name;
     } catch(e) {
-      var message = gettextCatalog.getString('Copay only supports Bitcoin Cash using new version numbers addresses');
+      var message = gettextCatalog.getString('Copay only supports Zelcash using new version numbers addresses');
       var backText = gettextCatalog.getString('Go back');
       var learnText = gettextCatalog.getString('Learn more');
       popupService.showConfirm(null, message, backText, learnText, function(back) {
@@ -167,7 +167,7 @@ angular.module('copayApp.controllers').controller('confirmController', function(
       txp: {},
     };
 
-    if (tx.coin && tx.coin == 'bch') tx.feeLevel = 'normal';
+    if (tx.coin && tx.coin == 'zel') tx.feeLevel = 'normal';
 
     // Other Scope vars
     $scope.isCordova = isCordova;
@@ -474,7 +474,7 @@ angular.module('copayApp.controllers').controller('confirmController', function(
 
     // If select another wallet
     tx.coin = wallet.coin;
-    tx.feeLevel = wallet.coin == 'bch' ? 'normal' : configFeeLevel;
+    tx.feeLevel = wallet.coin == 'zel' ? 'normal' : configFeeLevel;
     usingCustomFee = null;
 
     setButtonText(wallet.credentials.m > 1, !!tx.paypro);
@@ -618,7 +618,7 @@ angular.module('copayApp.controllers').controller('confirmController', function(
 
   $scope.chooseFeeLevel = function(tx, wallet) {
 
-    if (wallet.coin == 'bch') return;
+    if (wallet.coin == 'zel') return;
 
     var scope = $rootScope.$new(true);
     scope.network = tx.network;

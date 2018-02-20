@@ -356,14 +356,10 @@ msgstr "Carte di BitPay Visa®"
 msgid "Bitcoin Address"
 msgstr "Indirizzo Bitcoin"
 
-#: www/views/cashScan.html:4
-msgid "Bitcoin Cash (BCH) Balances"
-msgstr "Saldi di Bitcoin Cash (BCH)"
-
 #: www/views/preferencesCash.html:3
 #: www/views/tab-settings.html:47
-msgid "Bitcoin Cash Support"
-msgstr "Supporto Bitcoin Cash"
+msgid "Zelcash Support"
+msgstr "Supporto Zelcash"
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
@@ -373,7 +369,7 @@ msgstr "Criterio delle Commissioni del Bitcoin Network"
 
 #: src/js/services/incomingData.js:151
 msgid "Bitcoin cash Payment"
-msgstr "Pagamento Bitcoin Cash"
+msgstr "Pagamento Zelcash"
 
 #: www/views/onboarding/tour.html:31
 msgid "Bitcoin is a currency."
@@ -924,10 +920,6 @@ msgstr "Non vedi la tua lingua su Crowdin? Contatta il proprietario su Crowdin! 
 msgid "Download"
 msgstr "Download"
 
-#: www/views/cashScan.html:36
-msgid "Duplicate for BCH"
-msgstr "Duplicato per BCH"
-
 #: src/js/services/onGoingProcess.js:49
 msgid "Duplicating wallet..."
 msgstr "Duplicazione di portafoglio..."
@@ -958,8 +950,8 @@ msgid "Empty addresses limit reached. New addresses cannot be generated."
 msgstr "Raggiunto il limite degli indirizzi vuoti. Non possono essere generati nuovi indirizzi."
 
 #: www/views/preferencesCash.html:17
-msgid "Enable Bitcoin Cash wallet creation and operation within the App."
-msgstr "Attivare la creazione del portafoglio funzionalità Bitcoin Cash e all'interno dell'App."
+msgid "Enable Zelcash wallet creation and operation within the App."
+msgstr "Attivare la creazione del portafoglio funzionalità Zelcash e all'interno dell'App."
 
 #: www/views/tab-scan.html:19
 msgid "Enable camera access in your device settings to get started."
@@ -1389,8 +1381,8 @@ msgstr "Portafoglio hardware"
 
 #: src/js/controllers/create.js:180
 #: src/js/controllers/join.js:145
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
-msgstr "I portafogli hardware non sono ancora supportati con Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Zelcash"
+msgstr "I portafogli hardware non sono ancora supportati con Zelcash"
 
 #: www/views/tab-settings.html:20
 msgid "Help & Support"
@@ -1893,8 +1885,8 @@ msgid "No wallets available to receive funds"
 msgstr "Nessun portafoglo disponibile per ricevere i fondi"
 
 #: www/views/cashScan.html:14
-msgid "No wallets eligible for Bitcoin Cash support"
-msgstr "Nessun portafogli idoneo al supporto di Bitcoin Cash"
+msgid "No wallets eligible for Zelcash support"
+msgstr "Nessun portafogli idoneo al supporto di Zelcash"
 
 #: www/views/cashScan.html:44
 msgid "Non eligible ZEL wallets"
@@ -2130,8 +2122,8 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr "Pagamento accettato. Esso sarà trasmesso attraverso la rete Glidera. Nel caso in cui ci fosse un problema, si potrà eliminarlo 6 ore dopo che è stato creato."
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
-msgstr "Indirizzo per il pagamento è stato tradotto al nuovo formato di indirizzo Bitcoin Cash:"
+msgid "Payment address was translated to new Zelcash address format:"
+msgstr "Indirizzo per il pagamento è stato tradotto al nuovo formato di indirizzo Zelcash:"
 
 #: www/views/modals/txp-details.html:109
 msgid "Payment details"
@@ -2464,8 +2456,8 @@ msgid "Scan your fingerprint please"
 msgstr "Per cortesia procedere alla scansione dell'impronta digitale"
 
 #: www/views/preferencesCash.html:22
-msgid "Scan your wallets for Bitcoin Cash"
-msgstr "Cercare nei tuoi portafogli per Bitcoin Cash"
+msgid "Scan your wallets for Zelcash"
+msgstr "Cercare nei tuoi portafogli per Zelcash"
 
 #: src/js/services/onGoingProcess.js:30
 msgid "Scanning Wallet funds..."
@@ -2760,8 +2752,8 @@ msgid "Super Economy"
 msgstr "Super Economica"
 
 #: www/views/preferencesCash.html:11
-msgid "Support Bitcoin Cash"
-msgstr "Supporto Bitcoin Cash"
+msgid "Support Zelcash"
+msgstr "Supporto Zelcash"
 
 #: www/views/paperWallet.html:7
 msgid "Sweep"

@@ -356,14 +356,10 @@ msgstr "BitPay Visa&reg; Cards"
 msgid "Bitcoin Address"
 msgstr "Adresse bitcoin"
 
-#: www/views/cashScan.html:4
-msgid "Bitcoin Cash (BCH) Balances"
-msgstr "Soldes Bitcoin Cash (BCH)"
-
 #: www/views/preferencesCash.html:3
 #: www/views/tab-settings.html:47
-msgid "Bitcoin Cash Support"
-msgstr "Prise en charge de Bitcoin Cash"
+msgid "Zelcash Support"
+msgstr "Prise en charge de Zelcash"
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
@@ -373,7 +369,7 @@ msgstr "Frais de réseau"
 
 #: src/js/services/incomingData.js:151
 msgid "Bitcoin cash Payment"
-msgstr "Paiement Bitcoin Cash"
+msgstr "Paiement Zelcash"
 
 #: www/views/onboarding/tour.html:31
 msgid "Bitcoin is a currency."
@@ -924,10 +920,6 @@ msgstr "Vous ne voyez pas votre langue sur Crowdin ? Contactez le propriétaire
 msgid "Download"
 msgstr "Télécharger"
 
-#: www/views/cashScan.html:36
-msgid "Duplicate for BCH"
-msgstr "Dupliquer pour BCH"
-
 #: src/js/services/onGoingProcess.js:49
 msgid "Duplicating wallet..."
 msgstr "Duplication du portefeuille..."
@@ -958,8 +950,8 @@ msgid "Empty addresses limit reached. New addresses cannot be generated."
 msgstr "La limite d'adresses vides a été atteinte. Les nouvelles adresses ne peuvent plus être générées."
 
 #: www/views/preferencesCash.html:17
-msgid "Enable Bitcoin Cash wallet creation and operation within the App."
-msgstr "Permet la création et la gestion de portefeuilles Bitcoin Cash."
+msgid "Enable Zelcash wallet creation and operation within the App."
+msgstr "Permet la création et la gestion de portefeuilles Zelcash."
 
 #: www/views/tab-scan.html:19
 msgid "Enable camera access in your device settings to get started."
@@ -1389,8 +1381,8 @@ msgstr "Portefeuille matériel"
 
 #: src/js/controllers/create.js:180
 #: src/js/controllers/join.js:145
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
-msgstr "Les portefeuilles matériels ne sont pas encore pris en charge avec Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Zelcash"
+msgstr "Les portefeuilles matériels ne sont pas encore pris en charge avec Zelcash"
 
 #: www/views/tab-settings.html:20
 msgid "Help & Support"
@@ -1893,8 +1885,8 @@ msgid "No wallets available to receive funds"
 msgstr "Aucun portefeuille disponible pour recevoir des fonds"
 
 #: www/views/cashScan.html:14
-msgid "No wallets eligible for Bitcoin Cash support"
-msgstr "Aucun portefeuille n'est éligible pour Bitcoin Cash"
+msgid "No wallets eligible for Zelcash support"
+msgstr "Aucun portefeuille n'est éligible pour Zelcash"
 
 #: www/views/cashScan.html:44
 msgid "Non eligible ZEL wallets"
@@ -2130,8 +2122,8 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr "Paiement accepté. Il sera diffusé par Glidera. Dans le cas où il y a un problème, il peut être supprimé 6 heures après avoir été créé."
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
-msgstr "L'adresse de paiement a été convertie au nouveau format d'adresse Bitcoin Cash :"
+msgid "Payment address was translated to new Zelcash address format:"
+msgstr "L'adresse de paiement a été convertie au nouveau format d'adresse Zelcash :"
 
 #: www/views/modals/txp-details.html:109
 msgid "Payment details"
@@ -2464,8 +2456,8 @@ msgid "Scan your fingerprint please"
 msgstr "Veuillez scanner votre empreinte digitale"
 
 #: www/views/preferencesCash.html:22
-msgid "Scan your wallets for Bitcoin Cash"
-msgstr "Analyser vos portefeuilles pour Bitcoin Cash"
+msgid "Scan your wallets for Zelcash"
+msgstr "Analyser vos portefeuilles pour Zelcash"
 
 #: src/js/services/onGoingProcess.js:30
 msgid "Scanning Wallet funds..."
@@ -2760,8 +2752,8 @@ msgid "Super Economy"
 msgstr "Infimes"
 
 #: www/views/preferencesCash.html:11
-msgid "Support Bitcoin Cash"
-msgstr "Prendre en charge Bitcoin Cash"
+msgid "Support Zelcash"
+msgstr "Prendre en charge Zelcash"
 
 #: www/views/paperWallet.html:7
 msgid "Sweep"

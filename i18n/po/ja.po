@@ -358,13 +358,9 @@ msgstr "BitPayのVISA&reg; カード"
 msgid "Bitcoin Address"
 msgstr "ビットコインアドレス"
 
-#: www/views/cashScan.html:4
-msgid "Bitcoin Cash (BCH) Balances"
-msgstr ""
-
 #: www/views/preferencesCash.html:3
 #: www/views/tab-settings.html:47
-msgid "Bitcoin Cash Support"
+msgid "Zelcash Support"
 msgstr ""
 
 #: www/views/modals/chooseFeeLevel.html:4
@@ -926,10 +922,6 @@ msgstr "ご自分の言語はCrowdinで見当たりませんか？Crowdinの管�
 msgid "Download"
 msgstr "ダウンロード"
 
-#: www/views/cashScan.html:36
-msgid "Duplicate for BCH"
-msgstr ""
-
 #: src/js/services/onGoingProcess.js:49
 msgid "Duplicating wallet..."
 msgstr ""
@@ -960,7 +952,7 @@ msgid "Empty addresses limit reached. New addresses cannot be generated."
 msgstr "未使用アドレスを生成しすぎたため、これ以上アドレスを生成することができません。"
 
 #: www/views/preferencesCash.html:17
-msgid "Enable Bitcoin Cash wallet creation and operation within the App."
+msgid "Enable Zelcash wallet creation and operation within the App."
 msgstr ""
 
 #: www/views/tab-scan.html:19
@@ -1391,7 +1383,7 @@ msgstr "ハードウェアウォレット"
 
 #: src/js/controllers/create.js:180
 #: src/js/controllers/join.js:145
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Zelcash"
 msgstr ""
 
 #: www/views/tab-settings.html:20
@@ -1895,7 +1887,7 @@ msgid "No wallets available to receive funds"
 msgstr "ペーパーウォレットの出金を受け取るためのウォレットが入っていません。"
 
 #: www/views/cashScan.html:14
-msgid "No wallets eligible for Bitcoin Cash support"
+msgid "No wallets eligible for Zelcash support"
 msgstr ""
 
 #: www/views/cashScan.html:44
@@ -2132,7 +2124,7 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr "取引が承認されました。Glideraより送信されます。問題があった場合、送金命令を出す６時間以内に取り消すことができます。"
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
+msgid "Payment address was translated to new Zelcash address format:"
 msgstr ""
 
 #: www/views/modals/txp-details.html:109
@@ -2466,7 +2458,7 @@ msgid "Scan your fingerprint please"
 msgstr "指紋をスキャンしてください"
 
 #: www/views/preferencesCash.html:22
-msgid "Scan your wallets for Bitcoin Cash"
+msgid "Scan your wallets for Zelcash"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:30
@@ -2764,7 +2756,7 @@ msgid "Super Economy"
 msgstr "超節約"
 
 #: www/views/preferencesCash.html:11
-msgid "Support Bitcoin Cash"
+msgid "Support Zelcash"
 msgstr ""
 
 #: www/views/paperWallet.html:7

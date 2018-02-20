@@ -46,7 +46,7 @@ angular.module('copayApp.controllers').controller('customAmountController', func
       $scope.amountUnitStr = parsedAmount.amountUnitStr;
 
       if (currency != 'ZEL') {
-        // Convert to ZEL or BCH
+        // Convert to ZEL
         var config = configService.getSync().wallet.settings;
         var amountUnit = txFormatService.satToUnit(parsedAmount.amountSat);
         var zelParsedAmount = txFormatService.parseAmount($scope.wallet.coin, amountUnit, $scope.wallet.coin);
@@ -54,7 +54,7 @@ angular.module('copayApp.controllers').controller('customAmountController', func
         $scope.amountBtc = zelParsedAmount.amount;
         $scope.altAmountStr = zelParsedAmount.amountUnitStr;
       } else {
-        $scope.amountBtc = amount; // ZEL or BCH
+        $scope.amountBtc = amount; // ZEL
         $scope.altAmountStr = txFormatService.formatAlternativeStr($scope.wallet.coin, parsedAmount.amountSat);
       }
     });

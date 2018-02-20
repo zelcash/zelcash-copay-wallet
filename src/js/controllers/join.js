@@ -140,12 +140,6 @@ angular.module('copayApp.controllers').controller('joinController',
         return;
       }
 
-      if ($scope.formData.seedSource.id == walletService.externalSource.ledger.id || $scope.formData.seedSource.id == walletService.externalSource.trezor.id || $scope.formData.seedSource.id == walletService.externalSource.intelTEE.id) {
-        if ($scope.formData.coin == 'bch') {
-          popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Hardware wallets are not yet supported with Bitcoin Cash'));
-          return;
-        }
-
         var account = $scope.formData.account;
         if (!account || account < 1) {
           popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Invalid account number'));
@@ -185,10 +179,6 @@ angular.module('copayApp.controllers').controller('joinController',
           opts = lodash.assign(lopts, opts);
           _join(opts);
         });
-      } else {
-
-        _join(opts);
-      }
     };
 
     function _join(opts) {

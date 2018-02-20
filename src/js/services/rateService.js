@@ -25,7 +25,6 @@ var RateService = function(opts) {
   self._isAvailable = false;
   self._rates = {};
   self._alternatives = [];
-  self._ratesBCH = {};
   self._queued = [];
 
   self.updateRates();

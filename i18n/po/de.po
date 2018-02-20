@@ -356,13 +356,9 @@ msgstr "BitPay Visa&reg; Karten"
 msgid "Bitcoin Address"
 msgstr "Bitcoin-Adresse"
 
-#: www/views/cashScan.html:4
-msgid "Bitcoin Cash (BCH) Balances"
-msgstr ""
-
 #: www/views/preferencesCash.html:3
 #: www/views/tab-settings.html:47
-msgid "Bitcoin Cash Support"
+msgid "Zelcash Support"
 msgstr ""
 
 #: www/views/modals/chooseFeeLevel.html:4
@@ -924,10 +920,6 @@ msgstr "Wird deine Sprache auf Crowdin nicht angezeigt? Kontaktiere den Support 
 msgid "Download"
 msgstr "Herunterladen"
 
-#: www/views/cashScan.html:36
-msgid "Duplicate for BCH"
-msgstr ""
-
 #: src/js/services/onGoingProcess.js:49
 msgid "Duplicating wallet..."
 msgstr ""
@@ -958,7 +950,7 @@ msgid "Empty addresses limit reached. New addresses cannot be generated."
 msgstr "Obergrenze für leere Adressen erreicht. Neue Adressen können nicht generiert werden."
 
 #: www/views/preferencesCash.html:17
-msgid "Enable Bitcoin Cash wallet creation and operation within the App."
+msgid "Enable Zelcash wallet creation and operation within the App."
 msgstr ""
 
 #: www/views/tab-scan.html:19
@@ -1389,7 +1381,7 @@ msgstr "Hardware-Wallet"
 
 #: src/js/controllers/create.js:180
 #: src/js/controllers/join.js:145
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Zelcash"
 msgstr ""
 
 #: www/views/tab-settings.html:20
@@ -1893,7 +1885,7 @@ msgid "No wallets available to receive funds"
 msgstr "Keine Wallet verfügbar um Guthaben zu erhalten"
 
 #: www/views/cashScan.html:14
-msgid "No wallets eligible for Bitcoin Cash support"
+msgid "No wallets eligible for Zelcash support"
 msgstr ""
 
 #: www/views/cashScan.html:44
@@ -2130,7 +2122,7 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr "Zahlung akzeptiert. Sie wird durch Glidera übermittelt. Falls ein Problem auftritt, kann sie nach einer Wartezeit von 6 Stunden gelöscht werden."
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
+msgid "Payment address was translated to new Zelcash address format:"
 msgstr ""
 
 #: www/views/modals/txp-details.html:109
@@ -2464,7 +2456,7 @@ msgid "Scan your fingerprint please"
 msgstr "Scannen Sie bitte Ihren Fingerabdruck"
 
 #: www/views/preferencesCash.html:22
-msgid "Scan your wallets for Bitcoin Cash"
+msgid "Scan your wallets for Zelcash"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:30
@@ -2760,7 +2752,7 @@ msgid "Super Economy"
 msgstr "Niedrigste Priorität"
 
 #: www/views/preferencesCash.html:11
-msgid "Support Bitcoin Cash"
+msgid "Support Zelcash"
 msgstr ""
 
 #: www/views/paperWallet.html:7

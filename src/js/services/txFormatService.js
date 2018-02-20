@@ -188,19 +188,19 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
     var alternativeIsoCode = config.alternativeIsoCode;
 
     // If fiat currency
-    if (currency != 'BCH' && currency != 'ZEL' && currency != 'sat') {
+    if (currency != 'ZEL' && currency != 'sat') {
       amountUnitStr = $filter('formatFiatAmount')(amount) + ' ' + currency;
       amountSat = rateService.fromFiat(amount, currency, coin).toFixed(0);
     } else if (currency == 'sat') {
       amountSat = amount;
       amountUnitStr = root.formatAmountStr(coin, amountSat);
-      // convert sat to ZEL or BCH
+      // convert sat to ZEL
       amount = (amountSat * satToBtc).toFixed(8);
       currency = (coin).toUpperCase();
     } else {
       amountSat = parseInt((amount * unitToSatoshi).toFixed(0));
       amountUnitStr = root.formatAmountStr(coin, amountSat);
-      // convert unit to ZEL or BCH
+      // convert unit to ZEL
       amount = (amountSat * satToBtc).toFixed(8);
       currency = (coin).toUpperCase();
     }
