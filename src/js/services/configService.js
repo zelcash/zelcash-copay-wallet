@@ -14,7 +14,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws2.zelcash.online/bws/api',
+      url: 'https://bws.zel.cash/bws/api',
     },
 
     download: {
