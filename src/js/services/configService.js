@@ -72,7 +72,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'https://masq.btcz.rocks/rates',
+      url: 'https://rates.zel.cash/rates',
     },
 
     release: {
