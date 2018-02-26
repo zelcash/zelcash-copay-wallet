@@ -7,7 +7,7 @@ angular.module('copayApp.controllers').controller('completeController', function
   });
 
   var defaults = configService.getDefaults();
-  var downloadUrl = appConfigService.name == 'zelcash' ? defaults.download.zelcash.url : defaults.download.bitpay.url;
+  var downloadUrl = appConfigService.name == 'zelcash' ? defaults.download.zelcash.url : defaults.download.zelcash.url;
 
   function quickFeedback(cb) {
     window.plugins.spinnerDialog.show();

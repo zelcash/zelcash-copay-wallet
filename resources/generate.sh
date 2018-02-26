@@ -35,4 +35,3 @@ function iconset {
 }
 
 postprocess zelcash
-postprocess bitpay
