@@ -26,8 +26,7 @@ For a list of frequently asked questions please visit the [Copay FAQ](https://gi
 - Push notifications (only available for ios and android versions)
 - Customizable wallet naming and background colors
 - Multiple languages supported
-- Available for [iOS](https://itunes.apple.com/us/app/copay/id951330296), [Android](https://play.google.com/store/apps/details?id=com.zelcom.zel-wallet),
-[Linux](https://github.com/Lumiboy/zelcash-copay-wallet/tags), [Windows](https://github.com/Lumiboy/zelcash-copay-wallet/tags) and [OS X](https://github.com/Lumiboy/zelcash-copay-wallet/tags) devices
+- Available for [Linux](https://github.com/Lumiboy/zelcash-copay-wallet/tags), [Windows](https://github.com/Lumiboy/zelcash-copay-wallet/tags) and [OS X](https://github.com/Lumiboy/zelcash-copay-wallet/tags) devices.
 
 ## Testing in a Browser
 
@@ -177,17 +176,6 @@ make
 
 On success, the Chrome extension will be located at: `browser-extensions/chrome/copay-chrome-extension`.  To install it go to `chrome://extensions/` in your browser and ensure you have the 'developer mode' option enabled in the settings.  Then click on "Load unpacked chrome extension" and choose the directory mentioned above.
 
-## Configuration
-
-### Enable External Services
-
-To enable external services, set the `COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` or `BITPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` environment variable to the location of your configuration before running the `apply` task.
-
-```
-COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.copay/externalServices.json" npm run apply:copay
-# or
-BITPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.bitpay/externalServices.json" npm run apply:bitpay
-```
 
 ## About Zelcash
 
@@ -236,7 +224,7 @@ Since version 1.5, Zelcash Wallet uses the root `m/48'` for hardware multisignat
 
 ## Bitcore Wallet Service
 
-Zelcash Wallet depends on [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for blockchain information, networking and Zelcash Wallet synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitpay.com`.  Switching between BWS instances is very simple and can be done with a click from within Zelcash Wallet.  BWS also allows Zelcash Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
+Zelcash Wallet depends on [Bitcore Wallet Service](https://github.com/Lumiboy/bitcore-wallet-service-zel) (BWS) for blockchain information, networking and Zelcash Wallet synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.zel.cash`.  Switching between BWS instances is very simple and can be done with a click from within Zelcash Wallet.  BWS also allows Zelcash Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
 
 ## Hardware Wallet Support
 
@@ -319,4 +307,5 @@ review the [guidelines for contributing](CONTRIBUTING.md).
 ## License
 
 Zelcash Wallet is released under the MIT License.  Please refer to the [LICENSE](https://github.com/bitpay/copay/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.
+
 # Zelcash Wallet
