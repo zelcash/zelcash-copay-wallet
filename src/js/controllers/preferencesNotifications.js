@@ -17,19 +17,19 @@ angular.module('copayApp.controllers').controller('preferencesNotificationsContr
       value: isConfirmedTxsNotificationsEnabled
     };
 
-    $scope.latestEmail = {
-      value: emailService.getEmailIfEnabled()
-    };
+    // $scope.latestEmail = {
+    //  value: emailService.getEmailIfEnabled()
+    // };
 
-    $scope.newEmail = lodash.clone($scope.latestEmail);
-    var isEmailEnabled = config.emailNotifications ? config.emailNotifications.enabled : false;
+    // $scope.newEmail = lodash.clone($scope.latestEmail);
+    // var isEmailEnabled = config.emailNotifications ? config.emailNotifications.enabled : false;
 
-    $scope.emailNotifications = {
-      value: isEmailEnabled && $scope.newEmail.value ? true : false
-    };
+    // $scope.emailNotifications = {
+    //  value: isEmailEnabled && $scope.newEmail.value ? true : false
+    // };
 
     $timeout(function() {
-      $scope.$apply();
+    $scope.$apply();
     });
   };
 
@@ -59,33 +59,33 @@ angular.module('copayApp.controllers').controller('preferencesNotificationsContr
     });
   };
 
-  $scope.emailNotificationsChange = function() {
-    var opts = {
-      enabled: $scope.emailNotifications.value,
-      email: $scope.newEmail.value
-    };
+  // $scope.emailNotificationsChange = function() {
+  //  var opts = {
+  //    enabled: $scope.emailNotifications.value,
+  //    email: $scope.newEmail.value
+  //  };
 
-    $scope.latestEmail = {
-      value: emailService.getEmailIfEnabled()
-    };
+  //  $scope.latestEmail = {
+  //    value: emailService.getEmailIfEnabled()
+  //  };
 
-    emailService.updateEmail(opts);
-  };
+  //  emailService.updateEmail(opts);
+  // };
 
-  $scope.save = function() {
-    emailService.updateEmail({
-      enabled: $scope.emailNotifications.value,
-      email: $scope.newEmail.value
-    });
+  // $scope.save = function() {
+  //  emailService.updateEmail({
+  //    enabled: $scope.emailNotifications.value,
+  //    email: $scope.newEmail.value
+  //  });
 
-    $scope.latestEmail = {
-      value: $scope.newEmail.value
-    };
+  //  $scope.latestEmail = {
+  //    value: $scope.newEmail.value
+  //  };
 
-    $timeout(function() {
-      $scope.$apply();
-    });
-  };
+  //  $timeout(function() {
+  //    $scope.$apply();
+  //  });
+  // };
 
   $scope.$on("$ionicView.enter", function(event, data) {
     updateConfig();
