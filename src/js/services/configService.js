@@ -19,7 +19,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     download: {
       zelcash: {
-        url: 'https://github.com/Lumiboy/zelcash-copay-wallet/releases'
+        url: 'https://github.com/zelcash/zelcash-copay-wallet/releases'
       }
     },
 

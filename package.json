@@ -39,11 +39,11 @@
   "homepage": "https://zel.cash",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/Lumiboy/zelcash-zelcash-wallet.git",
+    "url": "git://github.com/zelcash/zelcash-zelcash-wallet.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/Lumiboy/zelcash-zelcash-wallet/issues"
+    "url": "https://github.com/zelcash/zelcash-zelcash-wallet/issues"
   },
   "engines": {
     "node": "6",
@@ -56,7 +56,7 @@
     "bezier-easing": "^2.0.3",
     "bhttp": "^1.2.4",
     "bitauth": "^0.2.1",
-    "bitcore-wallet-client-zel": "git+https://github.com/Lumiboy/bitcore-wallet-client-zel.git",
+    "bitcore-wallet-client-zel": "git+https://github.com/zelcash/bitcore-wallet-client-zel.git",
     "bower": "^1.7.9",
     "cordova": "^7.1.0",
     "cordova-android": "^6.4.0",

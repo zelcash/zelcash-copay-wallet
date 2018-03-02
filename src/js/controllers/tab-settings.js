@@ -23,7 +23,7 @@ angular.module('copayApp.controllers').controller('tabSettingsController', funct
 
   $scope.openExternalLink = function() {
     var appName = appConfigService.name;
-    var url = appName == 'zelcash' ? 'https://github.com/Lumiboy/zelcash-copay-wallet/issues' : 'https://github.com/Lumiboy/zelcash-copay-wallet/issues';
+    var url = appName == 'zelcash' ? 'https://github.com/zelcash/zelcash-copay-wallet/issues' : 'https://github.com/zelcash/zelcash-copay-wallet/issues';
     var optIn = true;
     var title = null;
     var message = gettextCatalog.getString('Help and support information is available at the website.');

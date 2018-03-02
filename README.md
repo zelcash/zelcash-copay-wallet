@@ -26,16 +26,16 @@ For a list of frequently asked questions please visit the [Copay FAQ](https://gi
 - Push notifications (only available for ios and android versions)
 - Customizable wallet naming and background colors
 - Multiple languages supported
-- Available for [Linux](https://github.com/Lumiboy/zelcash-copay-wallet/tags), [Windows](https://github.com/Lumiboy/zelcash-copay-wallet/tags) and [OS X](https://github.com/Lumiboy/zelcash-copay-wallet/tags) devices.
+- Available for [Linux](https://github.com/zelcash/zelcash-copay-wallet/tags), [Windows](https://github.com/zelcash/zelcash-copay-wallet/tags) and [OS X](https://github.com/zelcash/zelcash-copay-wallet/tags) devices.
 
 ## Testing in a Browser
 
-> **Note:** This method should only be used for development purposes. When running Zelcash Wallet in a normal browser environment, browser extensions and other malicious code might have access to internal data and private keys. For production use, see the latest official [releases](https://github.com/Lumiboy/zelcash-copay-wallet/tags).
+> **Note:** This method should only be used for development purposes. When running Zelcash Wallet in a normal browser environment, browser extensions and other malicious code might have access to internal data and private keys. For production use, see the latest official [releases](https://github.com/zelcash/zelcash-copay-wallet/tags).
 
 Clone the repo and open the directory:
 
 ```
-git clone https://github.com/Lumiboy/zelcash-copay-wallet.git
+git clone https://github.com/zelcash/zelcash-copay-wallet.git
 cd zel-wallet
 ```
 
@@ -193,7 +193,7 @@ For more information regarding how addresses are generated using this procedure,
 
 Since v1.2 Zelcash uses BIP39 mnemonics for backing up wallets.  The BIP44 standard is used for wallet address derivation. Multisig wallets use P2SH addresses, while non-multisig wallets use P2PKH.
 
-Information about backup and recovery procedures is available at: https://github.com/Lumiboy/zelcash-copay-wallet/blob/master/backupRecovery.md
+Information about backup and recovery procedures is available at: https://github.com/zelcash/zelcash-copay-wallet/blob/master/backupRecovery.md
 
 Previous versions of Zelcash used files as backups. See the following section.
 
@@ -224,7 +224,7 @@ Since version 1.5, Zelcash Wallet uses the root `m/48'` for hardware multisignat
 
 ## Bitcore Wallet Service
 
-Zelcash Wallet depends on [Bitcore Wallet Service](https://github.com/Lumiboy/bitcore-wallet-service-zel) (BWS) for blockchain information, networking and Zelcash Wallet synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.zel.cash`.  Switching between BWS instances is very simple and can be done with a click from within Zelcash Wallet.  BWS also allows Zelcash Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
+Zelcash Wallet depends on [Bitcore Wallet Service](https://github.com/zelcash/bitcore-wallet-service-zel) (BWS) for blockchain information, networking and Zelcash Wallet synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.zel.cash`.  Switching between BWS instances is very simple and can be done with a click from within Zelcash Wallet.  BWS also allows Zelcash Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
 
 ## Hardware Wallet Support
 
@@ -251,7 +251,7 @@ When creating or joining a wallet, Zelcash Wallet will ask for two public keys f
 
 Every time you need to sign a transaction, the device will be needed to perform the signature. Follow the on screen instructions after clicking the `send` or `accept` buttons.
 
-Finally, in case you lose the device and you have the 24 word seed for the device, you can recover access to your funds using Zelcash Wallet, see: https://github.com/Lumiboy/zelcash-copay-wallet/blob/master/backupRecovery.md#hardware-wallets
+Finally, in case you lose the device and you have the 24 word seed for the device, you can recover access to your funds using Zelcash Wallet, see: https://github.com/zelcash/zelcash-copay-wallet/blob/master/backupRecovery.md#hardware-wallets
 
 
 ## Translations

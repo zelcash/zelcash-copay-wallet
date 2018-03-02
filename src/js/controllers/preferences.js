@@ -59,7 +59,7 @@ angular.module('copayApp.controllers').controller('preferencesController',
     };
 
     $scope.openWikiSpendingPassword = function() {
-      var url = 'https://github.com/Lumiboy/zelcash-copay-wallet/wiki/';
+      var url = 'https://github.com/zelcash/zelcash-copay-wallet/wiki/';
       var optIn = true;
       var title = null;
       var message = gettextCatalog.getString('Read more in our Wiki');
