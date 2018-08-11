@@ -2,14 +2,15 @@
   "//": "        Modify it in the app-template directory",
   "name": "zelcash",
   "description": "A Secure Zelcash Wallet",
-  "author": "Zelcash Foundation",
-  "version": "10.0.7",
+  "author": "Zel Technologies GmbH",
+  "version": "10.0.8",
   "keywords": [
     "bitcoin",
     "wallet",
     "zelcash",
     "multisignature",
-    "bitcore"
+    "bitcore",
+    "zel"
   ],
   "main": "www/index.html",
   "title": "Zelcash",

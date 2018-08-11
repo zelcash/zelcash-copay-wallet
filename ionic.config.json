@@ -1,6 +1,6 @@
 {
   "name": "Zelcash Wallet",
-  "app_id": "com.zelcash.zel-wallet-osx",
+  "app_id": "com.zelcash.copay-osx",
   "integrations": {
     "cordova": {}
   },

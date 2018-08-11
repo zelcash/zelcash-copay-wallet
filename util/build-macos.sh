@@ -73,7 +73,7 @@ if [ $SHOULD_SIGN ]
 then
   echo "Signing ${APP_NAME} DMG"
 
-  export IDENTITY="3rd Party Mac Developer Application: Zelcash Foundation."
+  export IDENTITY="3rd Party Mac Developer Application: Zel Technologies GmbH."
 
   # not need for 'out of app store' distribution (?)
 #  export PARENT_PLIST=parent.plist

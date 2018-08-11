@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="383007" id="com.zelcash.wallet" ios-CFBundleVersion="10.0.7" version="10.0.7">
+<widget android-versionCode="383007" id="com.zelcash.copay" ios-CFBundleVersion="10.0.8" version="10.0.8">
     <name>Zelcash Wallet</name>
     <description>
       Zelcash Wallet
     </description>
     <author email="info@zel.cash" href="https://zel.cash">
-        Zelcash Foundation
+        Zel Technologies GmbH
     </author>
     <content src="index.html" />
     <access origin="*" />

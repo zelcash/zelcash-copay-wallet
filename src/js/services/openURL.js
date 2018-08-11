@@ -58,7 +58,7 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
       // This event is sent to an existent instance of Copay (only for standalone apps)
       gui.App.on('open', function(pathData) {
         if (pathData.indexOf(/^bitcoin(cash)?:/) != -1) {
-          $log.debug('Bitcoin URL found');
+          $log.debug('Zelcash URL found');
           handleOpenURL({
             url: pathData.substring(pathData.indexOf(/^bitcoin(cash)?:/))
           });
@@ -83,7 +83,7 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
 
       if (navigator.registerProtocolHandler) {
         $log.debug('Registering Browser handlers base:' + base);
-        navigator.registerProtocolHandler('zelcash', url, 'Copay Bitcoin Handler');
+        navigator.registerProtocolHandler('zelcash', url, 'Copay Zelcash Handler');
         navigator.registerProtocolHandler('web+zelcash', url, 'Copay Wallet Handler');
       }
     }

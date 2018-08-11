@@ -2,8 +2,8 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Zelcash"
-#define MyAppVersion "10.0.7"
-#define MyAppPublisher "BitPay"
+#define MyAppVersion "10.0.8"
+#define MyAppPublisher "Zel Technologies GmbH"
 #define MyAppURL "https://github.com/zelcash/zelcash-copay-wallet"
 #define MyAppExeName "Zelcash.exe"
 #define AppId "804636ee-b017-4cad-8719-e58ac97ffa5c"

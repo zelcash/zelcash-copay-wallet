@@ -36,7 +36,7 @@ angular.module('copayApp.controllers').controller('amountController', function($
 
       if (hasZelWallets) {
         availableUnits.push({
-          name: 'Bitcoin',
+          name: 'Zelcash',
           id: 'zel',
           shortName: 'ZEL',
         });
