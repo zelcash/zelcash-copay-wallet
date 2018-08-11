@@ -58,7 +58,7 @@ angular.module('copayApp.controllers').controller('joinController',
 
     if ($stateParams.url) {
       var data = $stateParams.url;
-      data = data.replace('zelcash:', '');
+      data = data.replace('zel:', '');
       $scope.onQrCodeScannedJoin(data);
     }
 
