@@ -1,7 +1,9 @@
+# Zelcash Wallet
+
 # WARNING #
 This software should be used at your own risk. It is experimental.
 
-<img src="https://static1.squarespace.com/static/5a63831b8c56a8aad3aff672/t/5a9d323224a69491fe051c00/1520253705456/Logo-With-Text-Lightbackground-1000px.png?format=750w" alt="Zelcash" width="200">
+<img src="https://zel.cash/img/logo-zelcash-text.svg" alt="Zelcash" width="200">
 
 Zelcash Wallet is a secure Zel wallet platform for both desktop and mobile devices. Zelcash Wallet uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
@@ -307,5 +309,3 @@ review the [guidelines for contributing](CONTRIBUTING.md).
 ## License
 
 Zelcash Wallet is released under the MIT License.  Please refer to the [LICENSE](https://github.com/bitpay/copay/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.
-
-# Zelcash Wallet
