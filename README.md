@@ -1,3 +1,5 @@
+<a href="https://github.com/zelcash/zelcash-copay-wallet/releases"><img src="https://img.shields.io/github/downloads/zelcash/zelcash-copay-wallet/total.svg" alt="Downloads"></a>
+
 # Zelcash Wallet
 
 # WARNING #
