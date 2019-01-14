@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="383007" id="com.zelcash.copay" ios-CFBundleVersion="10.1.0" version="10.1.0">
+<widget android-versionCode="383007" id="com.zelcash.copay" ios-CFBundleVersion="10.1.1" version="10.1.1">
     <name>Zelcash Wallet</name>
     <description>
       Zelcash Wallet
